@@ -34,12 +34,12 @@ header .container{
 
 header .container .title{
   font-family: 'Lobster', cursive;
-  padding:15px 0 0 14rem;
+  padding:10px 0 0 14rem;
 }
 
 header .container .menu{
     background:#0bb5f4;
-    padding:15px;
+    padding:16px;
     border-radius: 5px;
     box-shadow: 0px 0px 7px 0px #d6c0c0;
 }
@@ -74,8 +74,8 @@ header .container .menu ul li a:hover{
 }
 
 #home .presentation img{
-    width:400px;
-    height:400px;
+    width:300px;
+    height:300px;
     border:2px solid white;
     box-shadow: 0px 0px 9px 1px white;
     border-radius: 10px;
@@ -85,11 +85,12 @@ header .container .menu ul li a:hover{
 
 #home .presentation .info{
     position:absolute;
-    width:600px;
-    right:10%;
+    width:650px;
+    right:5%;
     top:40%;
     transform:translate(-30%, -40%);
     text-align: center;
+    font-size:18px;
 }
 
 #home .presentation .info h1{
@@ -103,19 +104,67 @@ header .container .menu ul li a:hover{
     font-family: 'Lobster';
     letter-spacing: 5px;
     font-size:1.5rem;
+    margin-top:-22px;
     margin-bottom:20px;
+    color:#0bb5f4;
 }
 
-#home .presentation .info p{
+#home .presentation .info .about p{
     text-align: justify;
+    line-height: 24px;
+}
+#home .presentation .info .about p a{
+   text-decoration:none;
+   color:#0bb5f4;
+   text-transform: uppercase;
 }
 
- .social ul{
+#home .presentation .info .about strong{
+    text-transform: uppercase;
+}
+
+#home .presentation .info .social ul{
     list-style-type: none;
+    padding:50px;
 }
 
-.social ul li{
-    display: inline;
+#home .presentation .info .social ul li{
+   display: inline;
+   padding:30px;
+   font-size:2rem;
 }
+
+#home .presentation .info .social ul li .fab{
+    background:white;
+    padding:6px;
+    border-radius: 10px;
+}
+
+.fa-facebook{
+  color:#3b5998;
+}
+.fa-twitter{
+    color:#1DA1F2;
+}
+
+.fa-codepen{
+  color:black;
+}
+
+.fa-linkedin{
+    color:#2867B2;
+}
+
+.fa-github{
+    color:black;
+}
+
+#home .presentation .info .social ul li .fab:hover{
+    background:#0bb5f4;
+    color:white;
+}
+
+
+
 
 
