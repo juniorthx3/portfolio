@@ -1,0 +1,74 @@
+@font-face {
+    font-family: Lobster;
+    src: url(./assets/fonts/Lobster/Lobster-Regular.ttf);
+}
+
+*{
+   margin:0;
+   padding:0; 
+   box-sizing: border-box;
+}
+
+body{
+    font-family: Calibri, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section{
+    background:linear-gradient(to right, #6d56c1 25%,black 25%);
+    color:white;
+    height: 100vh;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    height: 7vh;
+    position:relative;
+}
+
+header .container .title{
+  font-family: 'Lobster', cursive;
+  padding:15px 0 0 14rem;
+}
+
+header .container .menu{
+    background:#6d56c1;
+    padding:15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 7px 0px #d6c0c0;
+}
+
+header .container .menu ul{
+    list-style-type: none;
+}
+
+header .container .menu .menu-item{
+    padding:0;
+}
+
+header .container .menu ul li{
+   display: inline;
+   padding:10px;
+}
+
+header .container .menu ul li a{
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+    padding:20px;
+    cursor:pointer;
+}
+header .container .menu ul li a:hover{
+   color:black;
+   font-weight: bold;
+   text-shadow: 0 0 4px white;
+}
+
+
+#home .presentation img{
+    width:400px;
+    height: 400px;
+    position: absolute;
+    top:150px;
+    left:180px;
+}
