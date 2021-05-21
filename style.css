@@ -84,14 +84,14 @@ header .container .menu .menu-item{
 }
 /******************************************************/
 #home .presentation .picture{
-    width:21rem;
+    width:17rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #home .presentation .info{
-    width: 56rem;
+    width: 53rem;
     text-align: center;
     font-size:18px;
     padding:20px;
@@ -118,7 +118,7 @@ header .container .menu .menu-item{
     letter-spacing: 5px;
     font-size:1.5rem;
     margin-top:-22px;
-    margin-bottom:20px;
+    margin-bottom:30px;
     color:#0bb5f4;
 }
 
