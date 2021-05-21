@@ -16,81 +16,94 @@
 
 body{
     font-family: Calibri, Verdana, Geneva, Tahoma, sans-serif;
+    font-size:18px;
 }
 
-section{
+/* HOME SECTION */
+#home{
     background:linear-gradient(to right, #0bb5f4 25%,black 25%);
     color:white;
     height: 100vh;
 }
 
-header .container{
+/************* HEADER DESIGN ***************************************/
+#home header .container{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: 7vh;
-    position:relative;
+    max-height: 8vh;
 }
 
-header .container .title{
-  font-family: 'Lobster', cursive;
-  padding:10px 0 0 14rem;
+#home header .container img{
+    height:auto;
+    max-width: 80px;
 }
 
-header .container .menu{
+#home header .container .title{
+  padding-left:18rem;
+}
+
+#home header .container .menu{
+    margin:0;
     background:#0bb5f4;
-    padding:16px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 7px 0px #d6c0c0;
+    border-radius: 2px;
 }
 
-header .container .menu ul{
+#home header .container .menu ul{
     list-style-type: none;
 }
 
 header .container .menu .menu-item{
-    padding:0;
+    padding:18px;
 }
 
-header .container .menu ul li{
+#home header .container .menu ul li{
    display: inline;
-   padding-left:50px;
+   padding:20px;
 }
 
-header .container .menu ul li a{
+#home header .container .menu ul li a{
     text-decoration: none;
     color:white;
     text-transform: uppercase;
     cursor:pointer;
 }
-header .container .menu ul li a:hover{
+#home header .container .menu ul li a:hover{
    color:black;
    text-shadow: 0 0 4px white;
    border-bottom:2px solid white;
 }
+/************************************************/
 
+/*************** BODY ID HOME ******************/
 #home .presentation{
     margin:8rem auto;
+    width:70rem;
+    display: grid;
+    grid-template-columns: 30% 60%;
+    position:relative;
 }
-
-#home .presentation img{
-    width:300px;
-    height:300px;
-    border:2px solid white;
-    box-shadow: 0px 0px 9px 1px white;
-    border-radius: 10px;
-    position:absolute;
-    left:12%;
+/******************************************************/
+#home .presentation .picture{
+    width:21rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #home .presentation .info{
-    position:absolute;
-    width:650px;
-    right:5%;
-    top:40%;
-    transform:translate(-30%, -40%);
+    width: 56rem;
     text-align: center;
     font-size:18px;
+    padding:20px;
+}
+/******************************************************/
+
+#home .presentation .picture img{
+    width:auto;
+    max-height:350px;
+    border:2px solid white;
+    box-shadow: 0px 0px 9px 1px white;
+    border-radius: 10px;
 }
 
 #home .presentation .info h1{
@@ -122,6 +135,8 @@ header .container .menu ul li a:hover{
 #home .presentation .info .about strong{
     text-transform: uppercase;
 }
+
+/*********** SOCIAL ICON ***************/
 
 #home .presentation .info .social ul{
     list-style-type: none;
@@ -163,6 +178,7 @@ header .container .menu ul li a:hover{
     background:#0bb5f4;
     color:white;
 }
+/**************************************************************/
 
 
 
