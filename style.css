@@ -19,11 +19,14 @@ body{
     font-size:18px;
 }
 
+section{
+    height: 100vh;
+}
+
 /* HOME SECTION */
 #home{
     background:linear-gradient(to right, #0bb5f4 25%,black 25%);
     color:white;
-    height: 100vh;
 }
 
 /************* HEADER DESIGN ***************************************/
@@ -220,9 +223,30 @@ header .container .menu .menu-item{
 }
 /**************************************************************/
 
-/*****************************PORTFOLIO*********************************/
+/*****************************SKILLS*********************************/
+#skills .container .col{
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+#skills .container .row {margin: 0 -5px;}
 
+#skills .container .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
+#skills .container .card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+#skills .container .card ul{
+    list-style-type: none;
+}
 
 
 
