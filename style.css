@@ -84,7 +84,7 @@ header .container .menu .menu-item{
 }
 /******************************************************/
 #home .presentation .picture{
-    width:17rem;
+    width:18rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,7 +103,6 @@ header .container .menu .menu-item{
     max-height:350px;
     border:2px solid white;
     box-shadow: 0px 0px 9px 1px white;
-    border-radius: 10px;
 }
 
 #home .presentation .info h1{
