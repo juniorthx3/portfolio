@@ -116,14 +116,14 @@ header .container .menu .menu-item{
     font-family: 'Lobster';
     letter-spacing: 5px;
     font-size:1.5rem;
-    margin-top:-22px;
+    margin-top:-25px;
     margin-bottom:30px;
     color:#0bb5f4;
 }
 
 #home .presentation .info .about p{
     text-align: justify;
-    line-height: 24px;
+    line-height: 29px;
 }
 #home .presentation .info .about p a{
    text-decoration:none;
