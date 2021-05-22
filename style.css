@@ -62,7 +62,7 @@ section{
 }
 
 header .container .menu .menu-item{
-    padding:18px;
+    padding:16px;
 }
 
 #home header .container .menu ul li{
@@ -235,31 +235,32 @@ header .container .menu .menu-item{
     font-family: 'Lobster', cursive;
     text-align: center;
     font-size:3rem;
+    padding: 12px;
 }
 
 #skills h2{
     color:#0bb5f4;
     font-size:2rem;
+    padding:2px;
+    text-shadow: 2px 2px 2px red;
 }
 
 #skills .container{
     padding:2px;
-    border:2px solid red;
 }
 
 #skills .container .row{
-    border:2px solid red;
     display: flex;
     justify-content: center;
     align-items:flex-start
 }
 
-#skills .container .col{
+#skills .container .row .col{
     padding-left:100px;
 }
 
 
-#skills .container .card{
+#skills .container .row .col .card{
   box-shadow: 0px 0px 3px 3px #0bb5f4;
   padding: 20px;
   width:280px;
@@ -267,19 +268,36 @@ header .container .menu .menu-item{
   text-align: center;
   background-color: #f1f1f1;
   border-radius: 4px;
+  border:2px solid red;
+  position: relative;
 }
 
-#skills .container .card ul{
+#skills .container .row .col .card .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left:50%;
+    bottom:-20%;
+    transform:translate(-50%, -45%)
+}
+
+#skills .container .row .col .card ul{
     list-style-type: none;
 }
 
-#skills .container .card ul li{
+#skills .container .row .col .card ul li{
     text-align: justify;
     padding:7px;
-    font-size:18px;
+    font-size:19px;
 }
 
-#skills .container .card ul li:before{
+#skills .container .row .col .card ul li span{
+    position: relative;
+    left: 6px;
+}
+
+#skills .container .row .col .card ul li:before{
     content: '✓';
     font-weight: bold;
     color:blue;
