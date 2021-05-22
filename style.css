@@ -228,6 +228,7 @@ header .container .menu .menu-item{
 #skills{
     background:url('./assets/pics/smartphone-6265047_1920.jpg') repeat 100%/cover;
     filter: grayscale(80%);
+    height: 65vh;
 }
 
 #skills h1, h2{
