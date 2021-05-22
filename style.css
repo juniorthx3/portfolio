@@ -224,22 +224,39 @@ header .container .menu .menu-item{
 /**************************************************************/
 
 /*****************************SKILLS*********************************/
-#skills .container .col{
-    float: left;
-    width: 25%;
-    padding: 0 10px;
-}
-#skills .container .row {margin: 0 -5px;}
 
-#skills .container .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+#skills{
+    background:url('./assets/pics/smartphone-6265047_1920.jpg') repeat 100%/cover;
+    filter: grayscale(80%);
+}
+
+#skills h1{
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size:3rem;
+}
+
+#skills .container{
+    padding:2px;
+    border:2px solid red;
+}
+
+#skills .container .row{
+    border:2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start
+}
+
+#skills .container .col{
+    padding-left:100px;
+}
+
 
 #skills .container .card{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
-  padding: 16px;
+  padding: 20px;
+  width:200px;
   text-align: center;
   background-color: #f1f1f1;
 }
@@ -247,6 +264,5 @@ header .container .menu .menu-item{
 #skills .container .card ul{
     list-style-type: none;
 }
-
 
 
