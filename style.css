@@ -230,10 +230,15 @@ header .container .menu .menu-item{
     filter: grayscale(80%);
 }
 
-#skills h1{
+#skills h1, h2{
     font-family: 'Lobster', cursive;
     text-align: center;
     font-size:3rem;
+}
+
+#skills h2{
+    color:#0bb5f4;
+    font-size:2rem;
 }
 
 #skills .container{
@@ -254,15 +259,28 @@ header .container .menu .menu-item{
 
 
 #skills .container .card{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+  box-shadow: 0px 0px 3px 3px #0bb5f4;
   padding: 20px;
-  width:200px;
+  width:280px;
+  height: 300px;
   text-align: center;
   background-color: #f1f1f1;
+  border-radius: 4px;
 }
 
 #skills .container .card ul{
     list-style-type: none;
 }
 
+#skills .container .card ul li{
+    text-align: justify;
+    padding:7px;
+    font-size:18px;
+}
+
+#skills .container .card ul li:before{
+    content: '✓';
+    font-weight: bold;
+    color:blue;
+}
 
