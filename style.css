@@ -316,3 +316,22 @@ header .container .menu .menu-item{
     color:blue;
 }
 
+/**************************************************************/
+
+/********************PORTFOLIO SECTION********************************/
+
+#portfolio{
+    background:url('./assets/pics/background-2426328_1920.jpg') repeat 100%/cover
+}
+
+/********************RESUME SECTION********************************/
+
+#resume{
+    background:url('./assets/pics/vacation-4151027_1920.jpg') repeat 100%/cover
+}
+
+/********************CONNECT SECTION*******************************/
+
+#connect{
+    background:url('./assets/pics/system-2660914_1920.jpg') repeat 100%/cover;
+}
