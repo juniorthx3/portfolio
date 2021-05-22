@@ -231,11 +231,12 @@ header .container .menu .menu-item{
     height: 65vh;
 }
 
-#skills h1, h2{
+#skills h1, #skills h2{
     font-family: 'Lobster', cursive;
     text-align: center;
     font-size:3rem;
     padding: 12px;
+    text-shadow: 2px 2px 2px red;
 }
 
 #skills h2{
