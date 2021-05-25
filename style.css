@@ -80,6 +80,7 @@ header nav .menu .menu-item{
    color:black;
    text-shadow: 0 0 4px white;
    border-bottom:2px solid white;
+   font-weight: bold;
 }
 /**************************************************************************  */
 
@@ -292,7 +293,10 @@ header nav .menu .menu-item{
   border:2px double red;
   position: relative;
 }
-
+#skills .container .row .col .card:hover{
+    transform:translateY(-20px);
+    transition:0.3s;
+}
 #skills .container .row .col .card .icon-skills i{
     font-size:4.2rem;
     margin:10px;
@@ -448,13 +452,13 @@ footer .social-footer a:hover > i.fab{
 .navigation{
     position:fixed;
     bottom:10px;
-    right:90px;
+    right:30px;
     box-shadow: 2px 2px 12px rgba(43, 6, 104, 0.1);
 }
 
 .navigation a{
-    width:70px;
-    height: 70px;
+    width:50px;
+    height: 50px;
     background:#fff;
     border:1px solid #CBCBCB;
     display: flex;
@@ -464,7 +468,7 @@ footer .social-footer a:hover > i.fab{
 }
 
 .navigation i{
-    font-size:50px;
+    font-size:40px;
     color:#2b2b2b;
 }
 
@@ -472,8 +476,8 @@ footer .social-footer a:hover > i.fab{
     color:white;
     transform:scale(1.1);
 }
-.navigation a:button{
-    transform:translateY(10px) !important;
+.navigation i:hover{
+    color:#0bb5f4;
 }
 
 /*******************MEDIA QUERY************************/
