@@ -30,18 +30,18 @@ section{
 }
 
 /************************ HEADER DESIGN ****************************/
-#home header .container{
+#home header nav{
     display: flex;
     justify-content: space-between;
     max-height: 8vh;
 }
 
-#home header .container img{
+#home header nav img{
     height:auto;
     max-width: 60px;
 }
 
-#home header .container .title{
+#home header nav .title{
   padding-left:13rem;
   display: flex;
   justify-content: center;
@@ -51,32 +51,32 @@ section{
  
 }
 
-#home header .container .menu{
+#home header nav .menu{
     margin:0;
     background:#0bb5f4;
     border-radius: 2px;
 }
 
-#home header .container .menu ul{
+#home header nav .menu ul{
     list-style-type: none;
 }
 
-header .container .menu .menu-item{
+header nav .menu .menu-item{
     padding:16px;
 }
 
-#home header .container .menu ul li{
+#home header nav .menu ul li{
    display: inline;
    padding:20px;
 }
 
-#home header .container .menu ul li a{
+#home header nav .menu ul li a{
     text-decoration: none;
     color:white;
     text-transform: uppercase;
     cursor:pointer;
 }
-#home header .container .menu ul li a:hover{
+#home header nav .menu ul li a:hover{
    color:black;
    text-shadow: 0 0 4px white;
    border-bottom:2px solid white;
@@ -84,22 +84,22 @@ header .container .menu .menu-item{
 /**************************************************************************  */
 
 /*************** BODY ID HOME ******************/
-#home .presentation{
-    margin:3.5rem auto;
+#home .info-container{
+    margin:2.1rem auto;
     width:70rem;
     display: grid;
     grid-template-columns: 30% 60%;
     position:relative;
 }
 /******************************************************/
-#home .presentation .picture{
+#home .info-container .picture{
     width:18rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#home .presentation .info{
+#home .info-container .info{
     width: 54rem;
     text-align: center;
     font-size:18px;
@@ -107,21 +107,21 @@ header .container .menu .menu-item{
 }
 /******************************************************/
 
-#home .presentation .picture img{
+#home .info-container .picture img{
     width:auto;
     max-height:350px;
     border:2px solid white;
     box-shadow: 0px 0px 9px 1px white;
 }
 
-#home .presentation .info .profile h1{
+#home .info-container .info .profile h1{
     font-family: 'Teko';
     font-size:4rem;
     letter-spacing: 5px;
     text-transform: uppercase;
 }
 
-#home .presentation .info .profile h2{
+#home .info-container .info .profile h2{
     font-family: 'Lobster';
     letter-spacing: 3px;
     font-size:1.3rem;
@@ -130,69 +130,72 @@ header .container .menu .menu-item{
     color:#0bb5f4;
 }
 
-#home .presentation .info .about p{
+#home .info-container .info .about p{
     text-align: justify;
     line-height: 27px;
     padding:5px;
 }
 
-#home .presentation .info .about p button{
+#home .info-container .info .about p button{
    height:38px;
    width:110px;
    font-family: 'Lobster', cursive;
    cursor:pointer;
    outline:none;
    margin-right: 10px;
+   border-radius: 6px;
+   color:white;
 }
 
-#home .presentation .info .about p #portfolio{
+#home .info-container .info .about p #port-folio{
     background:#0bb5f4;
     border-color:#97d2e6;
-    border-radius:3px;
-    color:white;
 }
 
-#home .presentation .info .about p #resume{
+#home .info-container .info .about p #resume{
     background:#333;
     border-color:rgb(233, 218, 218);
-    border-radius:3px;
-    color:white;
 }
 
-#home .presentation .info .about p #portfolio:hover,
-#home .presentation .info .about p #resume:hover{
+#home .info-container .info .about p #port-folio:hover,
+#home .info-container .info .about p #resume:hover{
     background:white;
     color:black;
     border:#97d2e6;
+    transform:scale(1.1);
 }
 
-#home .presentation .info .about p a{
+#home .info-container .info .about p button:active{
+    transform:translateY(4px) !important;
+ }
+
+#home .info-container .info .about p a{
    text-decoration:none;
    color:#0bb5f4;
    text-transform: uppercase;
 }
-#home .presentation .info .about p a:hover{
+#home .info-container .info .about p a:hover{
     color:rgb(83, 82, 82);
 }
 
-#home .presentation .info .about strong{
+#home .info-container .info .about strong{
     text-transform: uppercase;
 }
 
 /*********** SOCIAL ICON ***************/
 
-#home .presentation .info .social ul{
+#home .info-container .info .social ul{
     list-style-type: none;
     padding:50px;
 }
 
-#home .presentation .info .social ul li{
+#home .info-container .info .social ul li{
    display: inline;
    padding:30px;
    font-size:2rem;
 }
 
-#home .presentation .info .social ul li .fab{
+#home .info-container .info .social ul li .fab{
     background:white;
     padding:6px;
     border-radius: 10px;
@@ -217,7 +220,7 @@ header .container .menu .menu-item{
     color:black;
 }
 
-#home .presentation .info .social ul li .fab:hover{
+#home .info-container .info .social ul li .fab:hover{
     background:#0bb5f4;
     color:white;
 }
@@ -347,4 +350,141 @@ header .container .menu .menu-item{
 
 #connect{
     background:url('./assets/pics/system-2660914_1920.jpg') repeat 100%/cover;
+}
+
+/**************************FOOTER*********************************/
+footer{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:rgb(219, 209, 209);
+}
+
+footer img{
+    height: 80px;
+}
+
+footer p{
+    font-family: 'Lobster';
+    line-height: 25px;
+}
+
+footer p:nth-child(2){
+    font-size:30px;
+    font-weight: bold;
+    color:#0bb5f4;
+    line-height: 60px;
+}
+footer p:nth-child(3){
+    font-size:16px;
+    color:#7e7d7d;
+    width:600px;
+    text-align: center;
+    line-height: 1px;
+}
+
+footer .social-footer a{
+    width:40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#e6e3e3;
+    margin:20px 10px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+footer .social-footer{
+    display: flex;
+}
+
+footer .social-footer a:hover > i.fab{
+    color:black;
+    border:#97d2e6;
+    transform:scale(1.1);
+}
+
+/*----FIXED SOCIAL BAR-------*/
+.fixed-social-bar{
+    position: fixed;
+    top:50%;
+    right:0px;
+    transform:translateY(-50%);
+}
+
+.fixed-social-bar a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:60px;
+    height: 60px;
+    margin:0;
+    line-height: 0;
+    background:#fff;
+    border:1px solid #CBCBCB;
+    text-decoration: none;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.10);
+}
+
+.fixed-social-bar i{
+    font-size:30px;
+    color:#2b2b2b;
+}
+
+
+.fixed-social-bar a:hover{
+    color:white;
+    background:black;
+    border:2px solid black;
+}
+.fixed-social-bar a:hover > i.fab{
+    color:white;
+}
+
+/*******************MEDIA QUERY************************/
+
+@media screen and (max-width: 800px){
+    #home header nav .menu{
+        display: none;
+    }
+    #home header nav .title{
+        position: absolute;
+        top:5px;
+        text-shadow: -1px -2px 12px #372fad;
+   }
+
+    #home header nav img{
+        display: none;
+    }
+    #home .info-container{
+        margin:2.1rem auto;
+        width:50%;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 100%;
+        position:relative;
+    }
+    #home .info-container .info .profile h1{
+       position: absolute;
+       top:45%;
+       transform:translateY(-45%);
+       font-size:2rem;
+    }
+    
+    #home .info-container .info .profile h2{
+        position: absolute;
+        top:53%;
+        transform:translateY(-53%);
+        font-size:1rem;
+    }
+    
+    #home .info-container .info .about p{
+        text-align: justify;
+        line-height: 27px;
+        padding:5px;
+    }
+    
 }
