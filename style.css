@@ -444,6 +444,30 @@ footer .social-footer a:hover > i.fab{
     color:white;
 }
 
+
+.navigation{
+    position:fixed;
+    bottom:10px;
+    right:90px;
+    box-shadow: 2px 2px 12px rgba(43, 6, 104, 0.1);
+}
+
+.navigation a{
+    width:70px;
+    height: 70px;
+    background:#fff;
+    border:1px solid #CBCBCB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.navigation i{
+    font-size:50px;
+    color:#2b2b2b;
+}
+
 /*******************MEDIA QUERY************************/
 
 @media screen and (max-width: 800px){
@@ -478,7 +502,7 @@ footer .social-footer a:hover > i.fab{
         position: absolute;
         top:53%;
         transform:translateY(-53%);
-        font-size:1rem;
+        font-size:0.8rem;
     }
     
     #home .info-container .info .about p{
