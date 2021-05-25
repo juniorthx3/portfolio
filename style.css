@@ -86,7 +86,7 @@ header nav .menu .menu-item{
 
 /*************** BODY ID HOME ******************/
 #home .info-container{
-    margin:2.1rem auto;
+    margin:5rem auto;
     width:70rem;
     display: grid;
     grid-template-columns: 30% 60%;
@@ -252,7 +252,8 @@ header nav .menu .menu-item{
     font-family: 'Lobster', cursive;
     text-align: center;
     font-size:3rem;
-    padding: 0;
+    padding: 25px;
+    margin-bottom:-40px;
     text-shadow: 2px 2px 2px red;
 }
 
@@ -267,7 +268,7 @@ header nav .menu .menu-item{
 }
 
 #skills .container{
-    padding:25px;
+    padding:70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -329,7 +330,7 @@ header nav .menu .menu-item{
 
 #skills .container .row .col .card ul li span{
     position: relative;
-    left: 6px;
+    left:6px;
 }
 
 #skills .container .row .col .card ul li:before{
@@ -338,17 +339,30 @@ header nav .menu .menu-item{
     color:blue;
 }
 
-#skills .languages{
-    padding:40px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background:white;
+#skills .languages-container{
+    background:deepskyblue;
+    text-align: center;
 }
 
-#skills .languages i{
-    font-size:5rem;
+#skills .languages-container .languages-transition{
+    transition: all .5s ease;
 }
+
+#skills .languages-container img{
+    max-width:100%;
+}
+
+#skills .languages-container img:hover{
+   transform:scale(2);
+}
+
+#skills .languages-container .languages-logo{
+    margin:1rem;
+    height: 3rem;
+    opacity: 8;
+    filter: brightness(100%) drop-shadow(4px 4px 3px #398494);
+}
+
 
 /**************************************************************/
 
@@ -372,35 +386,22 @@ header nav .menu .menu-item{
 
 /**************************FOOTER*********************************/
 footer{
-    height: 300px;
+    height: 160px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background:rgb(219, 209, 209);
+    background:#3f8eaa;
+  
 }
 
 footer img{
-    height: 80px;
+    height: 60px;
 }
 
 footer p{
     font-family: 'Lobster';
-    line-height: 25px;
-}
-
-footer p:nth-child(2){
-    font-size:30px;
-    font-weight: bold;
-    color:#0bb5f4;
-    line-height: 60px;
-}
-footer p:nth-child(3){
     font-size:16px;
-    color:#7e7d7d;
-    width:600px;
-    text-align: center;
-    line-height: 1px;
 }
 
 footer .social-footer a{
@@ -410,7 +411,7 @@ footer .social-footer a{
     justify-content: center;
     align-items: center;
     background:#e6e3e3;
-    margin:20px 10px;
+    margin:10px;
     border-radius: 50%;
     text-decoration: none;
 }
@@ -420,7 +421,7 @@ footer .social-footer{
 }
 
 footer .social-footer a:hover > i.fab{
-    color:black;
+    color:rgb(106, 39, 160);
     border:#97d2e6;
     transform:scale(1.1);
 }
