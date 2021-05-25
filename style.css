@@ -396,13 +396,21 @@ header nav .menu .menu-item{
 /********************RESUME SECTION********************************/
 
 #resume{
-    background:url('./assets/pics/vacation-4151027_1920.jpg') repeat 100%/cover
+    background:url('./assets/pics/coder.svg') repeat 100%/cover
 }
 
 /********************CONNECT SECTION*******************************/
 
 #connect{
     background:url('./assets/pics/system-2660914_1920.jpg') repeat 100%/cover;
+    width:100%;
+    color:white;
+}
+
+#connect img{
+   width:200px;
+   height: 200px;
+   z-index:1;
 }
 
 /**************************FOOTER*********************************/
