@@ -418,13 +418,13 @@ header nav .menu .menu-item{
 }
 
 #connect .xContainer img{
-    max-width:50rem;
+    max-width:55rem;
     padding:20px;
 }
 
 #connect .xContainer .contact-container{
     border:2px solid #4589a1;
-    padding:1rem 3rem;
+    padding:1rem 4rem;
     box-shadow: 1px 0 5px 1px #4589a1;
     background: transparent;
     border-left: 50px solid #4589a1;
