@@ -21,6 +21,7 @@ body{
 
 section{
     height: 100vh;
+    width:100%;
     overflow:hidden;
 }
 
@@ -35,6 +36,7 @@ section{
     display: flex;
     justify-content: space-between;
     max-height: 8vh;
+    flex-wrap: wrap;
 }
 
 #home header nav img{
@@ -86,11 +88,11 @@ header nav .menu .menu-item{
 
 /*************** BODY ID HOME ******************/
 #home .info-container{
-    margin:2.8rem auto;
-    width:85rem;
+    margin:2rem auto;
+    width:80rem;
     display: grid;
     grid-template-columns: 30% 60%;
-    grid-column-gap: 60px;
+    grid-column-gap: 5px;
     position:relative;
 }
 /******************************************************/
@@ -106,7 +108,7 @@ header nav .menu .menu-item{
     width: 55rem;
     text-align: center;
     font-size:18px;
-    padding:20px;
+    padding:10px;
     height:80vh;
 }
 /******************************************************/
@@ -129,7 +131,7 @@ header nav .menu .menu-item{
     letter-spacing: 3px;
     font-size:1.3rem;
     margin-top:-25px;
-    margin-bottom:30px;
+    margin-bottom:25px;
     color:#0bb5f4;
 }
 
@@ -188,7 +190,7 @@ header nav .menu .menu-item{
 
 #home .info-container .info .social ul{
     list-style-type: none;
-    padding:50px;
+    padding:25px;
 }
 
 #home .info-container .info .social ul li{
@@ -229,11 +231,8 @@ header nav .menu .menu-item{
 /**************************************************************/
 
 /*****************************SKILLS*********************************/
-
 #skills{
     filter: grayscale(80%);
-    width:100%;
-    height: 100vh;
 }
 
 #skills:before{
@@ -253,22 +252,25 @@ header nav .menu .menu-item{
     text-align: center;
     font-size:3rem;
     padding: 25px;
-    margin-bottom:-75px;
+    margin-bottom:-55px;
     text-shadow: 2px 2px 2px red;
+}
+#skills h1{
+    margin-top:-25px;
 }
 
 #skills h2{
     color:black;;
-    font-size:2rem;
+    font-size:0.9rem;
     text-shadow: 2px 2px 2px rgb(247, 242, 242);
     position: absolute;
     top:30%;
-    left:50%;
-    transform:translate(-50%, -50%);
+    left:55%;
+    transform:translate(-55%, -50%);
 }
 
 #skills .container{
-    padding:70px;
+    padding:45px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -284,7 +286,6 @@ header nav .menu .menu-item{
     padding-left:100px;
 }
 
-
 #skills .container .row .col .card{
   box-shadow: 0px 0px 15px 0px black;
   border-radius: 10px;
@@ -293,7 +294,7 @@ header nav .menu .menu-item{
   vertical-align: top;
   height: 330px;
   text-align: center;
-   background:deepskyblue;
+  background:deepskyblue;
   position: relative;
   border-left:20px solid red;
 }
@@ -521,45 +522,6 @@ footer .social-footer a:hover > i.fab{
 
 /*******************MEDIA QUERY************************/
 
-@media screen and (max-width: 800px){
-    #home header nav .menu{
-        display: none;
-    }
-    #home header nav .title{
-        position: absolute;
-        top:5px;
-        text-shadow: -1px -2px 12px #372fad;
-   }
+@media screen and (max-width: 650px){
 
-    #home header nav img{
-        display: none;
-    }
-    #home .info-container{
-        margin:2.1rem auto;
-        width:50%;
-        text-align: center;
-        display: grid;
-        grid-template-columns: 100%;
-        position:relative;
-    }
-    #home .info-container .info .profile h1{
-       position: absolute;
-       top:45%;
-       transform:translateY(-45%);
-       font-size:2rem;
-    }
-    
-    #home .info-container .info .profile h2{
-        position: absolute;
-        top:53%;
-        transform:translateY(-53%);
-        font-size:0.8rem;
-    }
-    
-    #home .info-container .info .about p{
-        text-align: justify;
-        line-height: 27px;
-        padding:5px;
-    }
-    
 }
