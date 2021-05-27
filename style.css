@@ -93,7 +93,7 @@ header nav .menu .menu-item{
     display: grid;
     grid-template-columns: 30% 60%;
     grid-column-gap: 10px;
-    position:relative;
+    
 }
 /******************************************************/
 #home .info-container .picture{
@@ -230,6 +230,10 @@ header nav .menu .menu-item{
 /*****************************SKILLS*********************************/
 #skills{
     filter: grayscale(80%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #skills:before{
@@ -248,16 +252,15 @@ header nav .menu .menu-item{
     font-family: 'Lobster', cursive;
     text-align: center;
     font-size:3rem;
-    padding: 25px;
-    margin-bottom:-55px;
     text-shadow: 2px 2px 2px red;
 }
+
 #skills h1{
-    margin-top:-25px;
+    margin-bottom:-25px;
 }
 
 #skills h2{
-    color:black;;
+    color:black;
     font-size:0.9rem;
     text-shadow: 2px 2px 2px rgb(247, 242, 242);
     position: absolute;
@@ -267,7 +270,7 @@ header nav .menu .menu-item{
 }
 
 #skills .container{
-    padding:45px;
+    padding:40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -287,7 +290,7 @@ header nav .menu .menu-item{
   box-shadow: 0px 0px 15px 0px black;
   border-radius: 10px;
   padding: 50px 25px;
-  width:280px;
+  width:240px;
   vertical-align: top;
   height: 330px;
   text-align: center;
@@ -358,6 +361,7 @@ header nav .menu .menu-item{
 #skills .languages-container{
     background:deepskyblue;
     text-align: center;
+    width:100%;
 }
 
 #skills .languages-container .languages-transition{
@@ -411,20 +415,20 @@ header nav .menu .menu-item{
 
 #connect .xContainer{
     height: 90vh;
-    width:100%;
+    width:80%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 #connect .xContainer img{
-    max-width:55rem;
+    max-width:60rem;
     padding:20px;
 }
 
 #connect .xContainer .contact-container{
     border:2px solid #4589a1;
-    padding:1rem 4rem;
+    padding:1rem 2.2rem;
     box-shadow: 1px 0 5px 1px #4589a1;
     background: transparent;
     border-left: 50px solid #4589a1;
@@ -435,10 +439,32 @@ header nav .menu .menu-item{
   transform:scale(1.1);
 }
 
+#connect .xContainer .form-container .contact-container .header-connect{
+    width:300px;
+    height:108px;
+    border:2px solid #4589a1;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+    border-left: 20px solid #4589a1;
+    border-right: 20px solid #4589a1;
+}
+
+#connect .xContainer .form-container .contact-container .header-connect img{
+    width:100px;
+    border:2px solid #4589a1;;
+    border-radius: 50%;
+    margin:0;
+    padding:0;
+    box-shadow: 2px 2px 11px 4px #dcb6b6;
+}
+
 #connect .xContainer .contact-container h1{
     text-align: center;
     text-shadow: 1px 1px 20px #4589a1;
     font-size:2rem;
+    padding-left:10px;
 }
 
 #connect .xContainer .contact-container .form-control input,
