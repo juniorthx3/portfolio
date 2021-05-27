@@ -400,6 +400,7 @@ header nav .menu .menu-item{
     text-align: center;
     font-size:3rem;
     text-shadow: 2px 2px 2px red;
+    filter:grayscale(80%);
 }
 
 .portfolio-row
@@ -436,6 +437,7 @@ header nav .menu .menu-item{
 {
   height:200px;
   filter:grayscale(80%);
+  border:3px double #0bb5f4;
 }
 
 #portfolio .portfolio-row .portfolio-column img:hover
