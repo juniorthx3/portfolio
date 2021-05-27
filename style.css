@@ -383,36 +383,16 @@ header nav .menu .menu-item{
     filter: brightness(100%) drop-shadow(4px 4px 3px #398494);
 }
 
-
 /**************************************************************/
 
 /********************PORTFOLIO SECTION********************************/
 
-#skills:before{
-   
-    background:url('./assets/pics/smartphone-6265047_1920.jpg') repeat 100%/cover;
-    filter:grayscale(80%) blur(5px);
-    
-}
-
 #portfolio{
-    filter:grayscale(30%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-#portfolio:after{
-    content:"";
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
     background:url('./assets/pics/background-2426328_1920.jpg') repeat 100%/cover;
-    filter:grayscale(80%) blur(2px);
-    color: white;
-    z-index:-10;
+    color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
  
 #portfolio .porfolio-container h1{
@@ -451,16 +431,17 @@ header nav .menu .menu-item{
   font-weight:bold;
   cursor:pointer;
 }
-.portfolio-row a:hover
-{
-  color:green;
-  text-transform:uppercase;
-}
+
 #portfolio .portfolio-row .portfolio-column img
-	{
-	 
-	  height:250px;
-	}
+{
+  height:250px;
+  filter:grayscale(80%);
+}
+
+#portfolio .portfolio-row .portfolio-column img:hover
+{
+  filter:grayscale(0%);
+}
 
 /********************RESUME SECTION********************************/
 
