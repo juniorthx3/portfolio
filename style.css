@@ -449,7 +449,34 @@ header nav .menu .menu-item{
 
 #services{
     background:url('./assets/pics/Subtle-Stripes.svg') repeat 100%/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.services {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .services .service {
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .services .service .services-icon img {
+    max-width: 30%;
+  }
+  
+  .services .service h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-top: 20px;
+    color: #1b206e;
+  }
 
 /********************CONNECT SECTION*******************************/
 
