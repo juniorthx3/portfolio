@@ -4,7 +4,7 @@ function openMsgBox(){
   }
 
   function closeChat(){
-      document.querySelector('.chatbox').style.clipPath="circle(0% at 90% 95%)"
+      document.querySelector('.chatbox').style.clipPath="circle(0% at 0% 95%)"
       document.querySelector('.window-msg').style.opacity = '1';
       document.querySelector('.window-msg').style.transitionDelay = '0.5s';
   }
