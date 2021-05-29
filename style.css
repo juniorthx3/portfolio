@@ -476,10 +476,11 @@ header nav .menu .menu-item{
 }
 
 #services .services {
-    margin-top: 20px;
+    width:80%;
+    margin-top: 10px;
     display: grid;
-    grid-template-columns: 400px 400px 400px;
-    gap: 10px;
+    grid-template-columns: 30% 30% 30%;
+    gap:30px;
     text-align: center;
   }
 
@@ -490,7 +491,8 @@ header nav .menu .menu-item{
     box-shadow: black 0px 0px 15px 0px;
     border-radius: 10px;
     height: auto;
-    width: 350px;
+    margin-left:23px;
+    width:100%;
   }
   #services .services .service:hover{
     transform:scale(1.1);
@@ -592,7 +594,7 @@ header nav .menu .menu-item{
 #connect .xContainer .contact-container .form-control input:focus + label,
 #connect .xContainer .contact-container .form-control input:valid + label,
 #connect .xContainer .contact-container .form-control textarea:focus + label{
-    color:#4589a1;
+    color:red;
     transform:translateY(-20px);
     font-size:16px;
 }
@@ -600,15 +602,15 @@ header nav .menu .menu-item{
 #connect .xContainer .contact-container .form-control input:focus,
 #connect .xContainer .contact-container .form-control input:valid,
 #connect .xContainer .contact-container .form-control textarea:focus{
-    border-bottom-color: #4589a1;
+    border-bottom-color: red;
 }
 
 #connect .xContainer .contact-container .form-control textarea:focus{
-    border-left-color: #4589a1;
+    border-left-color: red;
 }
 
 #connect .xContainer .contact-container button{
-    border:2px solid #4589a1;
+    border:2px solid black;
     margin:0 auto;
     padding:0.5rem 1rem;
     background: transparent;
@@ -623,7 +625,7 @@ header nav .menu .menu-item{
 
  #connect .xContainer .contact-container button:hover{
     color:#fff;
-    box-shadow: inset 0 0 0 30px #4589a1;
+    box-shadow: inset 0 0 0 30px red;
     transform:translateX(5px);
     transition: all 0.2s ease-in;
 }
@@ -696,7 +698,6 @@ footer .social-footer a:hover > i.fab{
     color:#2b2b2b;
 }
 
-
 .fixed-social-bar a:hover{
     color:white;
     background:black;
@@ -739,33 +740,7 @@ footer .social-footer a:hover > i.fab{
 }
 
 /****************MAILING BOX DESIGN*****************/
-.wrapper{
-  position:fixed;
-  bottom:5%;
-  right:72%;
-}
-
-.wrapper .chat-container{
-    position:relative;
-    height:430px;
-}
-
-.wrapper .chat-container .chatbox{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: deepskyblue;
-    filter:grayscale(80%);
-    padding:20px 10px 25px 20px;
-    height: 430px;
-    top:60px;
-    overflow: hidden;
-    clip-path: circle(0% at 0% 95%);
-    transition:clip-path 0.5s ease-in-out;
-    box-shadow: 0 2px 11px 3px rgb(0 0 0 / 50%);
-}
-
-.wrapper .window-msg{
+.icon-msg{
     position:fixed;
     left:30px;
     bottom:10px;
@@ -784,10 +759,38 @@ footer .social-footer a:hover > i.fab{
     transition-delay: 0;
 }
 
-.wrapper .chat-container .chatbox form{
+.container-msg{
+  position:fixed;
+  bottom:5%;
+  right:72%;
+  visibility:hidden;
+}
+
+.container-msg .chat-container{
+    position:relative;
+    height:435px;
+}
+
+.container-msg .chat-container .chatbox{
     display: flex;
     flex-direction: column;
-    height: auto;
+    align-items: center;
+    background-color: deepskyblue;
+    filter:grayscale(80%);
+    padding:10px 15px 25px 15px;
+    height: 430px;
+    top:60px;
+    overflow: hidden;
+    clip-path: circle(0% at 0% 95%);
+    transition:clip-path 0.5s ease-in-out;
+    box-shadow: 0 2px 11px 3px rgb(0 0 0 / 50%);
+    border-radius: 5px;
+}
+
+.container-msg .chat-container .chatbox form{
+    display: flex;
+    flex-direction: column;
+    height:auto;
     width:290px;
 }
 
@@ -799,7 +802,7 @@ footer .social-footer a:hover > i.fab{
     font-size:19px;
 }
 
-.wrapper .chat-container .chatbox .pic{
+.container-msg .chat-container .chatbox .pic{
     background:url(./assets/pics/Milien.png) no-repeat center/cover;
     height: 120px;
     width:110px;
@@ -809,14 +812,14 @@ footer .social-footer a:hover > i.fab{
     margin-top:5px;
 }
 
-.wrapper .chat-container .chatbox .receiver{
+.container-msg .chat-container .chatbox .receiver{
     margin:0;
     font-size:22px;
     color:#ececec;
     font-weight: bold;
 }
 
-.wrapper .chat-container .chatbox .dots .dot{
+.container-msg .chat-container .chatbox .dots .dot{
     height: 4px;
     width:4px;
     background:#ececec;
@@ -824,8 +827,8 @@ footer .social-footer a:hover > i.fab{
     background:red;
 }
 
-.wrapper .chat-container .chatbox form textarea{
-    height: 140px;
+.container-msg .chat-container .chatbox form textarea{
+    height: 150px;
     margin-top:10px;
     padding:10px;
     outline:none;
@@ -834,18 +837,18 @@ footer .social-footer a:hover > i.fab{
     border-radius: 2px;
     font-family: 'Teko';
     font-size:1.1rem;
-    border-top:4px solid gray;
-    border-bottom:4px solid gray;
-    border-left:15px solid red;
-    border-right:15px solid red;
+    border:2px solid #333;
 }
 
-.wrapper .chat-container .chatbox .send-btn{
-    padding:5px;
-    background:red;
-    color:#ececec;
-    filter:grayscale(50%);
-    border:none;
+.container-msg .chat-container .chatbox form textarea:hover{
+    border-color:red;
+}
+
+.container-msg .chat-container .chatbox .send-btn{
+    padding:2px;
+    background:transparent;
+    color:black;
+    filter:grayscale(80%);
     outline:none;
     cursor: pointer;
     transition:0.3s;
@@ -854,17 +857,17 @@ footer .social-footer a:hover > i.fab{
     font-family: 'Teko';
     font-size:1.1rem;
     background:transparent;
-    border:2px solid red;
+    border:2px solid black;
 }
 
-.wrapper .chat-container .chatbox .send-btn:hover{
-    background:#ececec;
-    box-shadow: rgba(0, 0, 0, 0.2);
-    color:black;
+.container-msg .chat-container .chatbox .send-btn:hover{
+    color:#fff;
+    box-shadow: inset 0 0 0 30px red;
+    transition: all 0.2s ease-in;
 }
 
-.wrapper .chat-container .chatbox .send-btn:active{
-    transform:translateY(10px);
+.container-msg .chat-container .chatbox .send-btn:active{
+    transform:translateY(5px);
 }
 
 /*******************MEDIA QUERY************************/

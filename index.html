@@ -243,8 +243,12 @@
    <div class="navigation">
       <a href="#home"><i class="fas fa-arrow-circle-up"></i></a>
    </div>
+   <!-- Message -->
+   <div class="icon-msg" onClick="openMsgBox()">
+        <i class="fas fa-envelope" aria-hidden="true"></i>
+   </div>
    <!-- CHATBOX -->
-  <div class="wrapper">
+  <div class="container-msg">
       <div class="chat-container">
         <div class="chatbox" id="chatbox">
             <span class="close" onClick="closeChat()"><i class="far fa-times-circle"></i></span>
@@ -256,13 +260,9 @@
                 <span class="dot"></span>
             </div>
             <form action="">
-             <textarea placeholder="Send me a little message here..."></textarea>
-             <button class="send-btn">Send</button>
+             <textarea placeholder="Send me a little message here... Don't forget to put email, name or phone so you can receive an reply directly from me"></textarea>
+             <button class="send-btn">Send Message</button>
            </form>
-        </div>
-        <!-- Message -->
-        <div class="window-msg" onClick="openMsgBox()">
-            <i class="fas fa-envelope" aria-hidden="true"></i>
         </div>
       </div>
   </div>
