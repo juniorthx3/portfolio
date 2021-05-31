@@ -23,6 +23,10 @@ section{
     height: 100vh;
     width:100%;
     overflow:hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top:30px;
 }
 
 /* HOME SECTION */
@@ -30,6 +34,8 @@ section{
     background:linear-gradient(to right, #0bb5f4 21%,black 21%);
     filter:grayscale(60%);
     color:white;
+    margin:0;
+    padding:0;
 }
 
 /************************ HEADER DESIGN ****************************/
@@ -232,9 +238,6 @@ header nav .menu .menu-item{
 #skills{
     filter: grayscale(80%);
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 #skills:before{
@@ -258,6 +261,7 @@ header nav .menu .menu-item{
 
 #skills h1{
     margin-bottom:-10px;
+    color:gray;
 }
 
 #skills h2{
@@ -271,11 +275,10 @@ header nav .menu .menu-item{
 }
 
 #skills .container{
-    padding:40px;
+    padding:50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top:-15px;
 }
 
 #skills .container .row{
@@ -366,7 +369,7 @@ header nav .menu .menu-item{
     background:deepskyblue;
     text-align: center;
     width:100%;
-    margin-top:-20px;
+    margin-top:-5px;
 }
 
 #skills .languages-container .languages-transition{
@@ -394,10 +397,7 @@ header nav .menu .menu-item{
 
 #portfolio{
     background:url('./assets/pics/background-2426328_1920.jpg') repeat 100%/cover;
-    color:gray;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
  
 #portfolio .porfolio-container h1{
@@ -407,13 +407,14 @@ header nav .menu .menu-item{
     text-shadow: 2px 2px 2px red;
     filter:grayscale(80%);
     margin-bottom:20px;
+    color:gray;
 }
 
 .portfolio-row
 {
 	  display:flex;
 	  width:100%;
-      margin:0px auto;
+      margin:0 auto;
 }
 .portfolio-column
 {
@@ -421,7 +422,7 @@ header nav .menu .menu-item{
 	 flex-direction:column;
 	 align-items:center;
 	 justify-content:center;
-	 padding:10px;
+	 padding:30px;
 }
 .portfolio-row p
 {
@@ -441,14 +442,17 @@ header nav .menu .menu-item{
 
 #portfolio .portfolio-row .portfolio-column img
 {
-  height:185px;
+  height:200px;
   filter:grayscale(80%);
-  border:3px double #0bb5f4;
+  border:5px double #0bb5f4;
 }
 
 #portfolio .portfolio-row .portfolio-column img:hover
 {
   filter:grayscale(0%);
+  transform:translateY(-10px);
+  box-shadow: 0px 2px 15px 2px #8c7676;
+  background: rgba(0, 0, 0, 0.9);
 }
 
 /********************RESUME SECTION********************************/
@@ -456,14 +460,11 @@ header nav .menu .menu-item{
 #services{
     background:url('./assets/pics/Subtle-Stripes.svg') repeat 100%/cover;
     display: flex;
-    flex-direction: column;
-    justify-content:flex-start;
-    align-items: center;
     text-align: center;
 }
 
 #services .services-title{
-    padding:30px;
+    padding-bottom:25px;
 }
 
 #services .services-title h1{
@@ -524,8 +525,6 @@ header nav .menu .menu-item{
     background:url('./assets/pics/background1.svg') repeat 100%/cover;
     filter:grayscale(80%);
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -707,12 +706,20 @@ footer .social-footer a:hover > i.fab{
     color:white;
 }
 
-/****************NAVIGATION ARROW *****************/
+/****************SCROLL TO TOP*****************/
 .navigation{
     position:fixed;
     bottom:10px;
     right:30px;
     box-shadow: 2px 2px 12px rgba(43, 6, 104, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition:all .4s;
+}
+
+.navigation-active{
+    pointer-events: auto;
+    opacity: 1;
 }
 
 .navigation a{
