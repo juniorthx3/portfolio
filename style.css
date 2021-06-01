@@ -260,7 +260,7 @@ header nav .menu .menu-item{
 }
 
 #skills h1{
-    margin-bottom:-10px;
+    margin-bottom:-20px;
     color:gray;
 }
 
@@ -397,7 +397,6 @@ header nav .menu .menu-item{
 
 #portfolio{
     background:url('./assets/pics/background-2426328_1920.jpg') repeat 100%/cover;
-    display: flex;
 }
  
 #portfolio .porfolio-container h1{
@@ -411,7 +410,7 @@ header nav .menu .menu-item{
 }
 
 #portfolio .porfolio-container .projects{
-    width:80%;
+    width:90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -419,7 +418,7 @@ header nav .menu .menu-item{
 }
 
 #portfolio .porfolio-container .projects .project{
-   flex-basis: 30%;
+   flex-basis: 32%;
    text-align: center;
    border-radius: 7px;
    margin-bottom: 20px;
@@ -430,95 +429,63 @@ header nav .menu .menu-item{
 #portfolio .porfolio-container .projects .project img{
     width:100%;
     border-radius: 7px;
+    border:2px double #0bb5f4;
 } 
 
-.overlay{
+#portfolio .porfolio-container .projects .project .overlay{
     width:100%;
-    height: 100%;
+    height:100%;
     position: absolute;
     top:0;
     border-radius: 7px;
     cursor: pointer;
-    background:linear-gradient(rgba(0,0,0,0.5), #009688);
+    background:linear-gradient(rgba(0,0,0,0.5), #0bb5f4);
     opacity: 0;
+    transition:1s;
 }
 
 #portfolio .porfolio-container .projects .project:hover .overlay{
    opacity: 1;
 }
 
-#portfolio .porfolio-container .projects .project:hover .service-description{
+#portfolio .porfolio-container .projects .project .service-description{
   width:80%;
   position:absolute;
-  bottom:0;
+  bottom:0%;
   left:50%;
   transform:translateX(-50%);
   opacity: 0;
   transition:1s;
 }
+#portfolio .porfolio-container .projects .project .service-description h3{
+    text-transform: uppercase;
+}
 
-#portfolio .porfolio-container .projects .project:hover .service-description hr{
-    background:#fff;
-    height: 2px;
-    border:0;
-    margin:15px auto;
-    width:60%;
+#portfolio .porfolio-container .projects .project .service-description a{
+    text-decoration: none;
+    color:inherit;
+}
+
+#portfolio .porfolio-container .projects .project .service-description i{
+   text-transform: uppercase;
+   padding:10px;
+}
+
+#portfolio .porfolio-container .projects .project .service-description i{
+  font-size:2.5rem;
+  color:#0bb5f4
 }
 
 #portfolio .porfolio-container .projects .project:hover .service-description p{
     font-size:14px;
+    border-left: 7px solid green;
+    border-right: 7px solid green;
 }
 
-#portfolio .porfolio-container .projects .project:hover .service-description{
-  bottom:40%;
-  opacity: 1;
+#portfolio .porfolio-container .projects .project:hover .service-description{  
+    bottom:20%;
+    opacity: 1;
 }
-
-
-/* .portfolio-row
-{
-	  display:flex;
-	  width:100%;
-      margin:0 auto;
-}
-.projects
-{
-	 display:flex;
-	 flex-direction:column;
-	 align-items:center;
-	 justify-content:center;
-	 padding:30px;
-}
-.portfolio-row p
-{
-  background-color:red;
-  height:25px;
-  width:100%;
-  border-left: 7px solid green;
-  border-right: 7px solid green;
-}
-.portfolio-row a
-{
-  text-decoration:none;
-  color:white;
-  font-weight:bold;
-  cursor:pointer;
-}
-
-#portfolio .portfolio-row .projects img
-{
-  height:200px;
-  filter:grayscale(80%);
-  border:5px double #0bb5f4;
-}
-
-#portfolio .portfolio-row .projects img:hover
-{
-  filter:grayscale(0%);
-  transform:translateY(-10px);
-  box-shadow: 0px 2px 15px 2px #8c7676;
-  background: rgba(0, 0, 0, 0.9);
-} */
 
 /********************RESUME SECTION********************************/
 
@@ -944,6 +911,135 @@ footer .social-footer a:hover > i.fab{
 
 /*******************MEDIA QUERY************************/
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 1200px){
+  /* skills section */
+   #skills{
+       height: 113vh;
+   }
+
+   /* services section */
+   #services{
+    height: 170vh;
+  }
+
+  #services .services {
+      grid-template-columns: 100%;
+  }
+}
+@media screen and (max-width: 770px){
+
+  /* Home */
+
+  #home{
+      height: 150vh;
+  }
+  #home .info-container{
+    width:100%;
+    display: block;
+    text-align: center;
+ }
+
+ #home .info-container .picture{
+    margin:0 auto;
+    height:30vh;
+}
+#home .info-container .picture img{
+    max-height:220px;
+    box-shadow:none;
+}
+
+#home .info-container .info{
+    width: 100%;
+    font-size:14px;
+}
+
+#home .info-container .info .profile h1{
+    font-size:3rem;
+    letter-spacing:2px;
+}
+
+#home .info-container .info .profile h2{
+    letter-spacing: 2px;
+    font-size:1rem;
+    margin-top:-20px;
+    margin-bottom:10px;
+}
+
+#home .info-container .info .about p{
+    text-align: left;
+    line-height: 22px;
+    padding:5px;
+}
+
+  /* skills section */
+    #skills{
+        height: 240vh;
+    }
+
+    #skills h1{
+        margin-bottom:-50px;
+        color:gray;
+    }
+
+    #skills .container .row{
+        display: block;
+    }
+
+    #skills .container .row .col{
+        padding:20px;
+    }
+    
+    /* Projects section */
+    #portfolio{
+        height: 220vh;
+    }
+
+    #portfolio .porfolio-container .projects .project{
+        flex-basis: 85%;
+        
+     }
+     #portfolio .porfolio-container .projects .project .service-description h3{
+        text-transform:initial;
+    }
+
+     #portfolio .porfolio-container .projects .project:hover .service-description p{
+        font-size:12px;
+    }
+
+    #portfolio .porfolio-container .projects .project:hover .service-description hr{
+        margin:5px auto;
+    }
+
+    #portfolio .porfolio-container .projects .project:hover .service-description{  
+        bottom:30% !important;
+    }
+
+    /* connect section */
+    #connect{
+        height: 85vh;
+    }
+    #connect .xContainer{
+        height: 300vh;
+        width:100%;
+        display: block;
+    }
+    #connect .xContainer img{
+       visibility: hidden;
+       opacity: 0;
+    }
+
+    #connect .xContainer .contact-container{
+       position:absolute;
+       top:50px;
+       left:50%;
+       transform:translateX(-50%);
+    } 
+
+    /* icon message*/
+    .icon-msg{
+       opacity: 0;
+    }
 
 }
+
+
