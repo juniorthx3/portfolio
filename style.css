@@ -929,9 +929,8 @@ footer .social-footer a:hover > i.fab{
 @media screen and (max-width: 770px){
 
   /* Home */
-
   #home{
-      height: 150vh;
+      height: 120vh;
   }
   #home .info-container{
     width:100%;
@@ -969,7 +968,23 @@ footer .social-footer a:hover > i.fab{
     text-align: left;
     line-height: 22px;
     padding:5px;
+    font-size:16px;
 }
+
+#home .info-container .info .about p button{
+    height:30px;
+    width:100px;
+ }
+
+#home .info-container .info .about p a{
+    color:black;
+}
+
+#home .info-container .info .social ul li{
+    display: inline;
+    padding:15px;
+    font-size:1.5rem;
+ }
 
   /* skills section */
     #skills{
@@ -1038,6 +1053,7 @@ footer .social-footer a:hover > i.fab{
     /* icon message*/
     .icon-msg{
        opacity: 0;
+       visibility: hidden;
     }
 
 }
