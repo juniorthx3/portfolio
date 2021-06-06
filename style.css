@@ -12,12 +12,15 @@
    margin:0;
    padding:0; 
    box-sizing: border-box;
+   text-decoration: none;
+   list-style: none;
 }
 
 body{
     font-family: Calibri, Verdana, Geneva, Tahoma, sans-serif;
     font-size:18px;
 }
+
 
 section{
     height: 100vh;
@@ -38,61 +41,75 @@ section{
     padding:0;
 }
 
-/************************ HEADER DESIGN ****************************/
-#home header nav{
-    display: flex;
-    justify-content: space-between;
-    max-height: 8vh;
-    flex-wrap: wrap;
+/*************************MENU*********************************/
+#home header nav {
+    max-height: 9vh;
 }
 
-#home header nav img{
-    height:auto;
+#home header nav label.logo{
+    padding:0px 200px;
+}
+
+#home header nav label.logo img{
+    height:auto ;
     max-width: 60px;
 }
 
-#home header nav .title{
-  padding-left:13rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Lobster';
-  font-size:1.5rem;
+#home header nav ul{
+    float:right;
 }
 
-#home header nav .menu{
+#home header nav ul.menu{
     margin:0;
     background:#0bb5f4;
     border-radius: 2px;
 }
 
-#home header nav .menu ul{
-    list-style-type: none;
+#home header nav input[type="checkbox"]{
+    display: none;
 }
 
-header nav .menu .menu-item{
-    padding:16px;
+#home header nav ul li{
+    display: inline-block;
+    margin:0;
+    line-height: 55px;
+    padding:0 3px;
 }
 
-#home header nav .menu ul li{
-   display: inline;
-   padding:20px;
+#home header nav ul li:nth-child(1){
+    padding-left:20px;
+}
+#home header nav ul li:nth-child(5){
+    padding-right:20px;
 }
 
-#home header nav .menu ul li a{
-    text-decoration: none;
+
+#home header nav ul li a{
     color:white;
+    font-size:18px;
     text-transform: uppercase;
-    cursor:pointer;
+    padding:7px 20px;
+    border-radius: 3px; 
 }
-#home header nav .menu ul li a:hover{
-   color:black;
-   text-shadow: 0 0 4px white;
-   border-bottom:2px solid white;
-   font-weight: bold;
-}
-/**************************************************************************  */
 
+#home header nav ul li a:hover{
+    color:black;
+    text-shadow: 0 0 4px white;
+    font-weight: bold;  
+    transition:0.5s;
+}
+
+#home header nav label #bars, #home header nav label #times{
+    color:white;
+    font-size:30px;
+    line-height: 50px;
+    float:right;
+    margin-right: 40px;
+    cursor:pointer;
+    display: none;
+}
+
+/*************************************************************/
 /*************** BODY ID HOME ******************/
 #home .info-container{
     margin:2rem auto;
@@ -100,7 +117,6 @@ header nav .menu .menu-item{
     display: grid;
     grid-template-columns: 30% 60%;
     grid-column-gap: 10px;
-    
 }
 /******************************************************/
 #home .info-container .picture{
@@ -908,154 +924,4 @@ footer .social-footer a:hover > i.fab{
 .container-msg .chat-container .chatbox .send-btn:active{
     transform:translateY(5px);
 }
-
-/*******************MEDIA QUERY************************/
-
-@media screen and (max-width: 1200px){
-  /* skills section */
-   #skills{
-       height: 113vh;
-   }
-
-   /* services section */
-   #services{
-    height: 170vh;
-  }
-
-  #services .services {
-      grid-template-columns: 100%;
-  }
-}
-@media screen and (max-width: 770px){
-
-  /* Home */
-  #home{
-      height: 120vh;
-  }
-  #home .info-container{
-    width:100%;
-    display: block;
-    text-align: center;
- }
-
- #home .info-container .picture{
-    margin:0 auto;
-    height:30vh;
-}
-#home .info-container .picture img{
-    max-height:220px;
-    box-shadow:none;
-}
-
-#home .info-container .info{
-    width: 100%;
-    font-size:14px;
-}
-
-#home .info-container .info .profile h1{
-    font-size:3rem;
-    letter-spacing:2px;
-}
-
-#home .info-container .info .profile h2{
-    letter-spacing: 2px;
-    font-size:1rem;
-    margin-top:-20px;
-    margin-bottom:10px;
-}
-
-#home .info-container .info .about p{
-    text-align: left;
-    line-height: 22px;
-    padding:5px;
-    font-size:16px;
-}
-
-#home .info-container .info .about p button{
-    height:30px;
-    width:100px;
- }
-
-#home .info-container .info .about p a{
-    color:black;
-}
-
-#home .info-container .info .social ul li{
-    display: inline;
-    padding:15px;
-    font-size:1.5rem;
- }
-
-  /* skills section */
-    #skills{
-        height: 240vh;
-    }
-
-    #skills h1{
-        margin-bottom:-50px;
-        color:gray;
-    }
-
-    #skills .container .row{
-        display: block;
-    }
-
-    #skills .container .row .col{
-        padding:20px;
-    }
-    
-    /* Projects section */
-    #portfolio{
-        height: 220vh;
-    }
-
-    #portfolio .porfolio-container .projects .project{
-        flex-basis: 85%;
-        
-     }
-     #portfolio .porfolio-container .projects .project .service-description h3{
-        text-transform:initial;
-    }
-
-     #portfolio .porfolio-container .projects .project:hover .service-description p{
-        font-size:12px;
-    }
-
-    #portfolio .porfolio-container .projects .project:hover .service-description hr{
-        margin:5px auto;
-    }
-
-    #portfolio .porfolio-container .projects .project:hover .service-description{  
-        bottom:30% !important;
-    }
-
-    /* connect section */
-    #connect{
-        height: 85vh;
-    }
-    #connect .xContainer{
-        height: 300vh;
-        width:100%;
-        display: block;
-    }
-    #connect .xContainer img{
-       visibility: hidden;
-       opacity: 0;
-    }
-
-    #connect .xContainer .contact-container{
-       position:absolute;
-       top:50px;
-       left:50%;
-       transform:translateX(-50%);
-    } 
-
-    /* icon message*/
-    .icon-msg{
-       opacity: 0;
-       visibility: hidden;
-    }
-
-}
-
 

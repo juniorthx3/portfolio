@@ -1,0 +1,204 @@
+/*******************MEDIA QUERY************************/
+
+  @media screen and (max-width: 1076px){
+
+    /********************MENU*************************/
+    #home header nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background:#0bb5f4;
+     }
+
+    #home header nav label.logo{
+        padding-left:25px;
+    }
+
+    #home header nav ul.menu{
+        background:#2f3640;
+    }
+
+    #home header nav ul{
+        position: fixed;
+        width:100%;
+        height: 50vh;
+        top:58px;
+        left:0;
+        text-align: center;
+        transition:all .5s;
+    }
+
+    #home header nav ul li{
+        display: block;
+        margin:10px 0;
+        line-height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:8vh;
+    }
+
+    #home header nav ul li:nth-child(1), #home header nav ul li:nth-child(5){
+        padding:0;
+    }
+
+    #home header nav ul li a{
+        font-size:16px;
+    }
+ 
+    #home header nav ul li a:active, #home header nav ul li a:hover{
+        color:black;
+        width:100%;
+        border:none;
+        background:white; 
+    }
+
+
+    #home header nav label.icon #bars{
+        display: block;
+    }
+
+    #icon:checked ~ #home header nav ul{
+        left:0;
+     }
+ 
+     #icon:checked ~ label.icon #bars{
+         display: none;
+      }
+ 
+      #icon:checked ~ label.icon #times{
+         display: block;
+      }
+    /************************************************/
+    /* Home */
+    #home{
+        height: 120vh;
+        background:cyan;
+        overflow:visible;
+    }
+    #home .info-container{
+      width:100%;
+      display: block;
+      text-align: center;
+   }
+  
+   #home .info-container .picture{
+      margin:0 auto;
+      height:30vh;
+  }
+  #home .info-container .picture img{
+      max-height:220px;
+      box-shadow:none;
+  }
+  
+  #home .info-container .info{
+      width: 100%;
+      font-size:14px;
+  }
+  
+  #home .info-container .info .profile h1{
+      font-size:3rem;
+      letter-spacing:2px;
+  }
+  
+  #home .info-container .info .profile h2{
+      letter-spacing: 2px;
+      font-size:1rem;
+      margin-top:-20px;
+      margin-bottom:10px;
+  }
+  
+  #home .info-container .info .about p{
+      text-align: left;
+      line-height: 22px;
+      padding:5px;
+      font-size:16px;
+  }
+  
+  #home .info-container .info .about p button{
+      height:30px;
+      width:100px;
+   }
+  
+  #home .info-container .info .about p a{
+      color:black;
+  }
+  
+  #home .info-container .info .social ul li{
+      display: inline;
+      padding:15px;
+      font-size:1.5rem;
+   }
+  
+    /* skills section */
+      #skills{
+          height: 240vh;
+      }
+  
+      #skills h1{
+          margin-bottom:-50px;
+          color:gray;
+      }
+  
+      #skills .container .row{
+          display: block;
+      }
+  
+      #skills .container .row .col{
+          padding:20px;
+      }
+      
+      /* Projects section */
+      #portfolio{
+          height: 220vh;
+      }
+  
+      #portfolio .porfolio-container .projects .project{
+          flex-basis: 85%;
+          
+       }
+       #portfolio .porfolio-container .projects .project .service-description h3{
+          text-transform:initial;
+      }
+  
+       #portfolio .porfolio-container .projects .project:hover .service-description p{
+          font-size:12px;
+      }
+  
+      #portfolio .porfolio-container .projects .project:hover .service-description hr{
+          margin:5px auto;
+      }
+  
+      #portfolio .porfolio-container .projects .project:hover .service-description{  
+          bottom:30% !important;
+      }
+  
+      /* connect section */
+      #connect{
+          height: 85vh;
+      }
+      #connect .xContainer{
+          height: 300vh;
+          width:100%;
+          display: block;
+      }
+      #connect .xContainer img{
+         visibility: hidden;
+         opacity: 0;
+      }
+  
+      #connect .xContainer .contact-container{
+         position:absolute;
+         top:50px;
+         left:50%;
+         transform:translateX(-50%);
+      } 
+  
+      /* icon message*/
+      .icon-msg{
+         opacity: 0;
+         visibility: hidden;
+      }
+  
+  }
+  
