@@ -99,7 +99,7 @@ section{
     transition:0.5s;
 }
 
-#home header nav label #bars, #home header nav label #times{
+#home header nav label #bars{
     color:white;
     font-size:30px;
     line-height: 50px;
@@ -107,6 +107,8 @@ section{
     margin-right: 40px;
     cursor:pointer;
     display: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 /*************************************************************/

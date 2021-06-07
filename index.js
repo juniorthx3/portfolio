@@ -1,4 +1,6 @@
 const navigation= document.querySelector(".navigation");
+const bars= document.querySelector("#bars");
+const menu = document.querySelector(".menu");
 
 window.addEventListener("scroll", function(){
     window.pageYOffset > 100 ? navigation.classList.add('navigation-active'): navigation.classList.remove('navigation-active')
@@ -9,8 +11,7 @@ navigation.addEventListener('click', function(){
        top:0,
        left:0,
        behavior:'smooth'
-   })
-
+   });
 });
 
 
@@ -26,3 +27,19 @@ function closeChat(){
       document.querySelector('.icon-msg').style.transitionDelay = '0.5s';
       document.querySelector('.container-msg').style.visibility="hidden";
 }
+
+bars.addEventListener("click", ()=>{
+    bars.classList.toggle("active");
+    menu.classList.toggle("active");
+
+    menu.forEach((link, index)=>{
+        if(link.style.animation){
+            link.style.animation='';
+        }else{
+            link.style.animation=`digit 0.5s ease forwards ${index /7 + 1}s`;
+        }
+    })
+});
+
+
+
