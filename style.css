@@ -53,6 +53,7 @@ section{
 #home header nav label.logo img{
     height:auto ;
     max-width: 60px;
+    padding-top:4px;
 }
 
 #home header nav ul{
@@ -63,10 +64,6 @@ section{
     margin:0;
     background:#0bb5f4;
     border-radius: 2px;
-}
-
-#home header nav input[type="checkbox"]{
-    display: none;
 }
 
 #home header nav ul li{
@@ -82,7 +79,6 @@ section{
 #home header nav ul li:nth-child(5){
     padding-right:20px;
 }
-
 
 #home header nav ul li a{
     color:white;
@@ -103,12 +99,14 @@ section{
     color:white;
     font-size:30px;
     line-height: 50px;
-    float:right;
     margin-right: 40px;
     cursor:pointer;
     display: none;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+    position:absolute;
+    top:7px;
+    right:-20px;
 }
 
 /*************************************************************/
