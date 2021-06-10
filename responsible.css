@@ -1,6 +1,56 @@
 /*******************MEDIA QUERY************************/
 
-  @media screen and (max-width: 1076px){
+  @media screen and (max-width: 1273px){
+    #home{
+        height: 115vh;
+    }
+    #home .info-container{
+        margin:10px auto;
+        width:100%;
+        grid-template-columns: 30% 70%;
+        grid-column-gap: 2px;
+     }
+     #home .info-container .picture{
+        height:50vh;
+        
+        display: flex;
+        align-items: center;
+    }
+    #home .info-container .picture img{
+        max-height:210px;
+        box-shadow:none;
+    }
+    
+    #home .info-container .info{
+        width: 100%;
+        margin-top:0px;
+    }
+    #home .info-container .info .profile h1{
+        font-size:2.5rem;
+    }
+    
+    #home .info-container .info .profile h2{
+        font-size:1.4rem;
+        margin-top:-15px;
+        color:#0bb5f4;
+    }
+    #home .info-container .info .social ul{
+        padding:10px;
+    }
+    
+    #home .info-container .info .social ul li{
+       padding:20px;
+       font-size:1.8rem;
+    }
+  }
+  @media screen and (max-width: 1217px){
+    #home header nav label.logo{
+        padding:0px 70px;
+    }
+  }
+
+
+  @media screen and (min-width:480px) and (max-width: 870px) {
 
     /********************MENU*************************/
     #home header nav{
@@ -71,7 +121,7 @@
     /************************************************/
     /******************** HOME ********************/
     #home{
-        height: 105vh;
+        height: 125vh;
         background:coral;
     }
 
@@ -89,7 +139,7 @@
    
   
    #home .info-container .picture{
-      margin:0 auto;
+      margin:5px auto;
       height:30vh;
   }
   #home .info-container .picture img{
@@ -103,7 +153,7 @@
       margin-top:-35px;
   }
   #home .info-container .info .profile{
-    margin-top:-32px;
+    margin-top:-4px;
 }
   
   #home .info-container .info .profile h1{
@@ -120,7 +170,7 @@
   }
 
   #home .info-container .info .about{
-    margin-top:-5px;
+    margin-top:20px;
 }
   
   #home .info-container .info .about p{
@@ -220,4 +270,14 @@
       }
   
   }
+
+  @media screen and (max-width: 1073px){
+    #home header nav label.logo{
+        padding:0px 90px;
+    }
+  }
+
+  
+
+ 
   
