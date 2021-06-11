@@ -1,32 +1,30 @@
 /*******************MEDIA QUERY************************/
 
   @media screen and (max-width: 1273px){
-    #home{
-        height: 115vh;
-    }
+   
     #home .info-container{
         margin:10px auto;
         width:100%;
-        grid-template-columns: 30% 70%;
-        grid-column-gap: 2px;
+        grid-template-columns: 25% 75%;
+
      }
      #home .info-container .picture{
         height:50vh;
-        
         display: flex;
         align-items: center;
     }
     #home .info-container .picture img{
-        max-height:210px;
+        max-height:280px;
         box-shadow:none;
     }
     
     #home .info-container .info{
         width: 100%;
-        margin-top:0px;
+        margin-top:20px;
+        font-size:17px
     }
     #home .info-container .info .profile h1{
-        font-size:2.5rem;
+        font-size:3rem;
     }
     
     #home .info-container .info .profile h2{
@@ -42,20 +40,32 @@
        padding:20px;
        font-size:1.8rem;
     }
+
+    #home .info-container .info .social ul{
+        padding:30px;
+    }
   }
+
   @media screen and (max-width: 1217px){
+    #home .info-container{
+        grid-template-columns: 24% 70%;
+     }
+
+    #home .info-container .picture img{
+        max-height:230px;
+    }
+
     #home header nav label.logo{
         padding:0px 70px;
     }
   }
 
 
-  @media screen and (min-width:480px) and (max-width: 870px) {
+  @media screen and (max-width: 870px) {
 
     /********************MENU*************************/
     #home header nav{
         background:#0bb5f4;
-    
     }
     .menu{
         position: fixed;
@@ -73,10 +83,11 @@
     }
 
     #home header nav ul.menu{
-        background:#2f3640; 
+        background:DarkSalmon;
         display: flex;
         flex-direction: column;
         align-items: center;
+        border:2px solid gray;
     }
     
     #home header nav label.logo{
@@ -93,6 +104,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        border-bottom: 2px solid gray;
     }
 
     #home header nav ul li:nth-child(1), #home header nav ul li:nth-child(5){
@@ -108,6 +120,7 @@
         width:100%;
         border:none;
         background:white; 
+        transform: translateY(-3px) scale(1.4);
     }
 
     .menu.active {
@@ -121,8 +134,7 @@
     /************************************************/
     /******************** HOME ********************/
     #home{
-        height: 125vh;
-        background:coral;
+        background:linear-gradient(to right, #0bb5f4 50%,coral 50%);
     }
 
     #home header{
@@ -167,6 +179,7 @@
       margin-top:-17px;
       margin-bottom:10px;
       text-shadow: 1px 0px 4px white;
+      color:red;
   }
 
   #home .info-container .info .about{
@@ -201,22 +214,52 @@
   
   /******************** SECTION ********************/
       #skills{
-          height: 240vh;
+          height: 235vh;
+          background:black;
+      }
+      #skills:before{
+          background:none;
+      }
+
+      #skills .container{
+        width: 85%;
       }
   
       #skills h1{
-          margin-bottom:-50px;
-          color:gray;
+          color:white;
+          font-size:2.5rem;
+          position: absolute;
       }
   
       #skills .container .row{
           display: block;
+          width:100%;
       }
   
       #skills .container .row .col{
           padding:20px;
+
       }
-      
+
+      #skills .container .row .col .card{
+        box-shadow: 0px 0px 15px 0px gray;
+        border-radius: 0;
+        width:100%;
+        text-align: center;
+      }
+
+      #skills .container .row .col .card:hover{
+        transform:none;
+     }
+
+     #skills .container .row .col .card ul li{
+        font-size: 20px;
+    }
+
+    #skills .container .row .col .card .icon-skills i{
+        color:coral; 
+    }
+   
       /* Projects section */
       #portfolio{
           height: 220vh;
@@ -271,11 +314,12 @@
   
   }
 
-  @media screen and (max-width: 1073px){
-    #home header nav label.logo{
-        padding:0px 90px;
-    }
+  @media screen and (min-width: 462px) and (max-width: 650px){
+     #home{
+         height: 112vh;
+     }
   }
+
 
   
 
