@@ -1,6 +1,9 @@
 /*******************MEDIA QUERY************************/
 
   @media screen and (max-width: 1273px){
+    #home{
+        height: 110vh;
+    }
    
     #home .info-container{
         margin:10px auto;
@@ -220,10 +223,6 @@
       #skills:before{
           background:none;
       }
-
-      #skills .container{
-        width: 85%;
-      }
   
       #skills h1{
           color:white;
@@ -244,17 +243,12 @@
       #skills .container .row .col .card{
         box-shadow: 0px 0px 15px 0px gray;
         border-radius: 0;
-        width:100%;
         text-align: center;
       }
 
       #skills .container .row .col .card:hover{
         transform:none;
      }
-
-     #skills .container .row .col .card ul li{
-        font-size: 20px;
-    }
 
     #skills .container .row .col .card .icon-skills i{
         color:coral; 
@@ -314,11 +308,141 @@
   
   }
 
-  @media screen and (min-width: 462px) and (max-width: 650px){
-     #home{
-         height: 112vh;
-     }
-  }
+
+  
+/* IPad */
+@media screen and (max-width: 768px){
+    #home{
+        height: 115vh;
+    }
+    
+    #home .info-container .info .social ul li{
+       font-size:1.6rem;
+    }
+
+    #home .info-container .info .social ul{
+        margin-top:25px;
+        padding:5px;
+    }
+ }
+
+ @media screen and (max-width: 586px){
+    #home{
+        height: 120vh;
+    }
+ }
+
+
+ @media screen and (max-width: 533px){
+    #home{
+        height: 120vh;
+    }
+ }
+
+ @media screen and (max-width: 500px){
+    #home{
+        height: 124vh;
+    }
+ }
+
+ @media screen and (max-width: 498px){
+    #home{
+        height: 130vh;
+    }
+ }
+
+/* IPhone 6/7/8 PLUS */
+@media screen and (max-width: 414px){
+    #home{
+        height: 120vh;
+    }
+    
+    #home .info-container .info .social ul li{
+       font-size:1.6rem;
+    }
+
+    #home .info-container .info .social ul{
+        margin-top:25px;
+        padding:5px;
+    }
+ }
+
+ @media screen and (max-width: 418px){
+    #home{
+        height: 150vh;
+    }
+ }
+
+/* Pixel 2 */
+@media screen and (max-width: 411px){
+    #home{
+        height: 130vh;
+    }
+    
+    #home .info-container .info .social ul li{
+       font-size:1.6rem;
+    }
+
+    #home .info-container .info .social ul{
+        margin-top:25px;
+        padding:5px;
+    }
+ }
+
+   /* IPHONE 6/7/8*/
+   @media screen and (max-width: 375px){
+    #home{
+        height: 135vh;
+    }
+    
+    #home .info-container .info .social ul li{
+       padding:5px;
+       font-size:1.6rem;
+    }
+
+    #home .info-container .info .social ul{
+        padding:5px;
+        
+    }
+ }
+
+ /* Moto G4  & Galaxy S05*/
+@media screen and (max-width: 360px){
+    #home{
+        height: 140vh;
+    }
+    
+    #home .info-container .info .social ul li{
+       padding:10px;
+       font-size:1.6rem;
+    }
+
+    #home .info-container .info .social ul{
+        padding:10px;
+        margin-top:10px;
+    }
+ }
+
+
+ /* IPHONE 5/SE*/
+ @media screen and (max-width: 320px){
+    #home{
+        height: 165vh;
+    }
+    
+    #home .info-container .info .social ul li{
+       padding:5px;
+       font-size:1.6rem;
+    }
+
+    #home .info-container .info .social ul{
+        padding:5px;
+        
+    }
+ }
+
+
+
 
 
   
