@@ -9,13 +9,14 @@
         margin:10px auto;
         width:100%;
         grid-template-columns: 25% 75%;
-
      }
+
      #home .info-container .picture{
         height:50vh;
         display: flex;
         align-items: center;
     }
+
     #home .info-container .picture img{
         max-height:280px;
         box-shadow:none;
@@ -26,6 +27,7 @@
         margin-top:20px;
         font-size:17px
     }
+
     #home .info-container .info .profile h1{
         font-size:3rem;
     }
@@ -35,6 +37,7 @@
         margin-top:-15px;
         color:#0bb5f4;
     }
+
     #home .info-container .info .social ul{
         padding:10px;
     }
@@ -63,13 +66,19 @@
     }
   }
 
+  @media screen and (max-width: 1096px){
+   #skills{
+    height: 115vh;
+   }
+  }
+
 
   @media screen and (max-width: 870px) {
-
     /********************MENU*************************/
     #home header nav{
         background:#0bb5f4;
     }
+
     .menu{
         position: fixed;
         left: 100%;
@@ -134,7 +143,6 @@
         display: block;
     }
 
-    /************************************************/
     /******************** HOME ********************/
     #home{
         background:linear-gradient(to right, #0bb5f4 50%,coral 50%);
@@ -217,7 +225,7 @@
   
   /******************** SECTION ********************/
       #skills{
-          height: 235vh;
+          height: 230vh;
           background:black;
       }
       #skills:before{
@@ -308,7 +316,6 @@
   
   }
 
-
   
 /* IPad */
 @media screen and (max-width: 768px){
@@ -326,9 +333,22 @@
     }
  }
 
+ @media screen and (max-width: 592px){
+    #skills{
+        height: 245vh;
+    }
+ }
+
  @media screen and (max-width: 586px){
     #home{
         height: 120vh;
+    }
+ }
+
+ 
+ @media screen and (max-width: 537px){
+    #skills{
+        height: 260vh;
     }
  }
 
@@ -387,6 +407,8 @@
         margin-top:25px;
         padding:5px;
     }
+
+    #s
  }
 
    /* IPHONE 6/7/8*/
@@ -420,6 +442,10 @@
     #home .info-container .info .social ul{
         padding:10px;
         margin-top:10px;
+    }
+
+    #skills{
+        height: 275vh;
     }
  }
 
