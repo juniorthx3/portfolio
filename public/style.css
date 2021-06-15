@@ -1,11 +1,11 @@
 @font-face {
     font-family: Lobster;
-    src: url(./assets/fonts/Lobster/Lobster-Regular.ttf);
+    src: url(../assets/fonts/Lobster/Lobster-Regular.ttf);
 }
 
 @font-face {
     font-family: Teko;
-    src: url(./assets/fonts/Teko/Teko-Regular.ttf);
+    src: url(../assets/fonts/Teko/Teko-Regular.ttf);
 }
 
 *{
@@ -23,16 +23,17 @@ body{
 
 
 section{
-    height: 100vh;
+    min-height: 100vh;
     width:100%;
     overflow:hidden;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     padding-top:30px;
+    text-rendering:optimizeLegibility;
 }
 
-/* HOME SECTION */
+/*****************************HOME SECTION*********************************/
 #home{
     background:linear-gradient(to right, #0bb5f4 21%,black 21%);
     filter:grayscale(60%);
@@ -41,7 +42,6 @@ section{
     padding:0;
 }
 
-/*************************MENU*********************************/
 #home header nav {
     max-height: 9vh;
 }
@@ -70,12 +70,12 @@ section{
     margin:0;
     line-height: 55px;
     padding:0 3px;
-
 }
 
 #home header nav ul li:nth-child(1){
     padding-left:20px;
 }
+
 #home header nav ul li:nth-child(5){
     padding-right:20px;
 }
@@ -109,8 +109,6 @@ section{
     right:-20px;
 }
 
-/*************************************************************/
-/*************** BODY ID HOME ******************/
 #home .info-container{
     margin:2rem auto;
     width:80rem;
@@ -118,7 +116,7 @@ section{
     grid-template-columns: 30% 60%;
     grid-column-gap: 10px;
 }
-/******************************************************/
+
 #home .info-container .picture{
     margin:7rem auto;
     height:45vh;
@@ -131,7 +129,7 @@ section{
     padding:20px;
     height:75vh;
 }
-/******************************************************/
+
 #home .info-container .picture img{
     width:auto;
     max-height:335px;
@@ -206,8 +204,6 @@ section{
     text-transform: uppercase;
 }
 
-/*********** SOCIAL ICON ***************/
-
 #home .info-container .info .social ul{
     list-style-type: none;
     padding:25px;
@@ -248,12 +244,11 @@ section{
     background:#0bb5f4;
     color:white;
 }
-/**************************************************************/
 
-/*****************************SKILLS*********************************/
+
+/*****************************SKILLS SECTION*********************************/
 #skills{
     filter: grayscale(80%);
-    display: flex;
 }
 
 #skills:before{
@@ -263,7 +258,7 @@ section{
     left:0;
     width:100%;
     height:100%;
-    background:url('./assets/pics/smartphone-6265047_1920.jpg') repeat 100%/cover;
+    background:url('../assets/pics/smartphone-6265047_1920.jpg') repeat 100%/cover;
     filter:grayscale(80%) blur(5px);
     z-index:-10;
 }
@@ -291,7 +286,7 @@ section{
 }
 
 #skills .container{
-    padding:50px;
+    padding:55px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -300,11 +295,13 @@ section{
 #skills .container .row{
     display: flex;
     justify-content: center;
-    align-items:flex-start;
+    align-items:center;
+    width:70%;
+    padding:20px;
 }
 
 #skills .container .row .col{
-    padding:0 30px;
+    padding:0 50px;
 }
 
 #skills .container .row .col .card{
@@ -385,6 +382,7 @@ section{
     text-align: center;
     width:100%;
     margin-top:-35px;
+    margin-bottom:25px;
 }
 
 #skills .languages-container .languages-transition{
@@ -406,12 +404,10 @@ section{
     filter: brightness(100%) drop-shadow(4px 4px 3px #398494);
 }
 
-/**************************************************************/
-
-/********************PORTFOLIO SECTION********************************/
+/*****************************PORFOLIO SECTION*********************************/
 
 #portfolio{
-    background:url('./assets/pics/background-2426328_1920.jpg') repeat 100%/cover;
+    background:url('../assets/pics/background-2426328_1920.jpg') repeat 100%/cover;
 }
  
 #portfolio .porfolio-container h1{
@@ -502,10 +498,10 @@ section{
     opacity: 1;
 }
 
-/********************RESUME SECTION********************************/
+/*****************************RESUME SECTION*********************************/
 
 #services{
-    background:url('./assets/pics/Subtle-Stripes.svg') repeat 100%/cover;
+    background:url('../assets/pics/Subtle-Stripes.svg') repeat 100%/cover;
     display: flex;
     text-align: center;
 }
@@ -565,7 +561,8 @@ section{
       line-height: 25px;
   }
 
-/********************CONNECT SECTION*******************************/
+
+/*****************************CONNECT SECTION*********************************/
 
 #connect{
     font-family: 'Lobster', cursive;
@@ -680,7 +677,7 @@ section{
     transform:scale(0.80);
 }
 
-/**************************FOOTER*********************************/
+/*****************************FOOTER*********************************/
 footer{
     height: 120px;
     display: flex;
@@ -717,7 +714,7 @@ footer .social-footer a:hover > i.fab{
     transform:scale(1.1);
 }
 
-/*----FIXED SOCIAL BAR-------*/
+/*****************************FIXED SOCIAL BAR*********************************/
 .fixed-social-bar{
     position: fixed;
     top:50%;
@@ -753,7 +750,7 @@ footer .social-footer a:hover > i.fab{
     color:white;
 }
 
-/****************SCROLL TO TOP*****************/
+/*****************************NAVIGATION BUTTON (SCROLL TO TOP)*********************************/
 .navigation{
     position:fixed;
     bottom:10px;
@@ -793,7 +790,7 @@ footer .social-footer a:hover > i.fab{
     color:#0bb5f4;
 }
 
-/****************MAILING BOX DESIGN*****************/
+/*****************************MAILING BOX DESIGN*********************************/
 .icon-msg{
     position:fixed;
     left:30px;

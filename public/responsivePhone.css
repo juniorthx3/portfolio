@@ -1,0 +1,78 @@
+/* PHONES */
+@media screen and (device-height: 640px){
+    section{
+        height: 143vh;
+    }
+
+    #home .info-container .info .social ul li{
+        padding:6px;
+        font-size:1.7rem;
+     }
+}
+
+@media screen and (device-height: 731px){
+    section{
+        height: 120vh;
+    }
+
+    #home .info-container .info .social ul li{
+        padding:6px;
+        font-size:1.7rem;
+     }
+}
+
+@media screen and (device-height: 823px){
+    #home .info-container .info .social ul li{
+        padding:6px;
+        font-size:1.7rem;
+     }
+}
+
+@media screen and (device-height: 568px){
+    section{
+        height: 165vh;
+    }
+    #home .info-container .info .social ul li{
+        padding:5px;
+        font-size:1.2rem;
+     } 
+    #home .info-container .info .profile h1{
+        margin-top:10px;
+    }
+    #home .info-container .info .profile h2{
+        margin-top:-18px;
+    }
+    #home header nav label.logo img{
+        max-width: 55px;
+    }
+}
+
+@media screen and (device-height: 667px){
+    section{
+        height: 135vh;
+    }
+    #home .info-container .info .social ul li{
+        padding:10px;
+        font-size:1.4rem;
+     } 
+}
+
+@media screen and (device-height: 736px){
+    section{
+        height: 120vh;
+    }
+    #home .info-container .info .social ul li{
+        padding:10px;
+        font-size:1.4rem;
+     } 
+}
+
+@media screen and (device-height: 812px){
+    section{
+        height: 115vh;
+    }
+    #home .info-container .info .social ul li{
+        padding:10px;
+        font-size:1.4rem;
+     } 
+}

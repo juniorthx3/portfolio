@@ -1,10 +1,5 @@
 /*******************MEDIA QUERY************************/
-
   @media screen and (max-width: 1273px){
-    #home{
-        height: 110vh;
-    }
-   
     #home .info-container{
         margin:10px auto;
         width:100%;
@@ -37,39 +32,27 @@
         margin-top:-15px;
         color:#0bb5f4;
     }
-
-    #home .info-container .info .social ul{
-        padding:10px;
-    }
     
     #home .info-container .info .social ul li{
        padding:20px;
-       font-size:1.8rem;
-    }
-
-    #home .info-container .info .social ul{
-        padding:30px;
+       font-size:2rem;
     }
   }
+
 
   @media screen and (max-width: 1217px){
     #home .info-container{
         grid-template-columns: 24% 70%;
+        margin-left:20px;
      }
 
     #home .info-container .picture img{
-        max-height:230px;
+       height:230px;
     }
 
     #home header nav label.logo{
         padding:0px 70px;
     }
-  }
-
-  @media screen and (max-width: 1096px){
-   #skills{
-    height: 115vh;
-   }
   }
 
 
@@ -79,11 +62,15 @@
         background:#0bb5f4;
     }
 
+    #home .info-container{
+        padding-left:0;
+     }
+
     .menu{
         position: fixed;
         left: 100%;
         top: 63px;
-        height: 45vh;
+        height: 35vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -111,7 +98,7 @@
         display: block;
         margin:4px 0;
         line-height: 30px;
-        height:8vh;
+        height:6vh;
         width:100%;
         display: flex;
         justify-content: center;
@@ -132,7 +119,7 @@
         width:100%;
         border:none;
         background:white; 
-        transform: translateY(-3px) scale(1.4);
+        transform: translateY(-3px) scale(1.1);
     }
 
     .menu.active {
@@ -143,7 +130,7 @@
         display: block;
     }
 
-    /******************** HOME ********************/
+   /*************************************HOME*****************************/
     #home{
         background:linear-gradient(to right, #0bb5f4 50%,coral 50%);
     }
@@ -160,13 +147,12 @@
       text-align: center;
    }
    
-  
    #home .info-container .picture{
       margin:5px auto;
       height:30vh;
   }
   #home .info-container .picture img{
-      max-height:180px;
+      height:180px;
       box-shadow:none;
   }
   
@@ -207,26 +193,25 @@
       height:30px;
    }
 
-   #home .info-container .info .about p #port-folio:hover,
+#home .info-container .info .about p #port-folio:hover,
 #home .info-container .info .about p #resume:hover{
     background:transparent;
     transform:none;
 }
   
-   #home .info-container .info .about p a{
+#home .info-container .info .about p a{
     color:black;
 }
   
 #home .info-container .info .social ul li{
     display: inline;
     padding:15px;
-    font-size:1.5rem;
+    font-size:1.8rem;
  }
   
   /******************** SECTION ********************/
       #skills{
-          height: 230vh;
-          background:black;
+          background:coral;
       }
       #skills:before{
           background:none;
@@ -235,12 +220,12 @@
       #skills h1{
           color:white;
           font-size:2.5rem;
-          position: absolute;
+          margin-bottom: -80px;
       }
   
       #skills .container .row{
-          display: block;
           width:100%;
+          flex-direction: column;
       }
   
       #skills .container .row .col{
@@ -252,20 +237,28 @@
         box-shadow: 0px 0px 15px 0px gray;
         border-radius: 0;
         text-align: center;
+        width:250px;
+        height: 320px;
       }
 
       #skills .container .row .col .card:hover{
         transform:none;
-     }
+      }
 
-    #skills .container .row .col .card .icon-skills i{
-        color:coral; 
+      #skills .container .row .col .card .icon-skills{
+        height: 35px;
+      }
+
+      #skills .container .row .col .card .icon-skills i{
+        max-height: 15px;
+      }
+
+
+      #skills .languages-container img{
+        width:100px;
     }
    
       /* Projects section */
-      #portfolio{
-          height: 220vh;
-      }
   
       #portfolio .porfolio-container .projects .project{
           flex-basis: 85%;
@@ -288,9 +281,6 @@
       }
   
       /* connect section */
-      #connect{
-          height: 85vh;
-      }
       #connect .xContainer{
           height: 300vh;
           width:100%;
@@ -315,160 +305,6 @@
       }
   
   }
-
-  
-/* IPad */
-@media screen and (max-width: 768px){
-    #home{
-        height: 115vh;
-    }
-    
-    #home .info-container .info .social ul li{
-       font-size:1.6rem;
-    }
-
-    #home .info-container .info .social ul{
-        margin-top:25px;
-        padding:5px;
-    }
- }
-
- @media screen and (max-width: 592px){
-    #skills{
-        height: 245vh;
-    }
- }
-
- @media screen and (max-width: 586px){
-    #home{
-        height: 120vh;
-    }
- }
-
- 
- @media screen and (max-width: 537px){
-    #skills{
-        height: 260vh;
-    }
- }
-
-
- @media screen and (max-width: 533px){
-    #home{
-        height: 120vh;
-    }
- }
-
- @media screen and (max-width: 500px){
-    #home{
-        height: 124vh;
-    }
- }
-
- @media screen and (max-width: 498px){
-    #home{
-        height: 130vh;
-    }
- }
-
-/* IPhone 6/7/8 PLUS */
-@media screen and (max-width: 414px){
-    #home{
-        height: 120vh;
-    }
-    
-    #home .info-container .info .social ul li{
-       font-size:1.6rem;
-    }
-
-    #home .info-container .info .social ul{
-        margin-top:25px;
-        padding:5px;
-    }
- }
-
- @media screen and (max-width: 418px){
-    #home{
-        height: 150vh;
-    }
- }
-
-/* Pixel 2 */
-@media screen and (max-width: 411px){
-    #home{
-        height: 130vh;
-    }
-    
-    #home .info-container .info .social ul li{
-       font-size:1.6rem;
-    }
-
-    #home .info-container .info .social ul{
-        margin-top:25px;
-        padding:5px;
-    }
-
-    #s
- }
-
-   /* IPHONE 6/7/8*/
-   @media screen and (max-width: 375px){
-    #home{
-        height: 135vh;
-    }
-    
-    #home .info-container .info .social ul li{
-       padding:5px;
-       font-size:1.6rem;
-    }
-
-    #home .info-container .info .social ul{
-        padding:5px;
-        
-    }
- }
-
- /* Moto G4  & Galaxy S05*/
-@media screen and (max-width: 360px){
-    #home{
-        height: 140vh;
-    }
-    
-    #home .info-container .info .social ul li{
-       padding:10px;
-       font-size:1.6rem;
-    }
-
-    #home .info-container .info .social ul{
-        padding:10px;
-        margin-top:10px;
-    }
-
-    #skills{
-        height: 275vh;
-    }
- }
-
-
- /* IPHONE 5/SE*/
- @media screen and (max-width: 320px){
-    #home{
-        height: 165vh;
-    }
-    
-    #home .info-container .info .social ul li{
-       padding:5px;
-       font-size:1.6rem;
-    }
-
-    #home .info-container .info .social ul{
-        padding:5px;
-        
-    }
- }
-
-
-
 
 
   
