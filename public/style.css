@@ -421,7 +421,7 @@ section{
 }
 
 #portfolio .porfolio-container .projects{
-    width:90%;
+    width:85%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -435,6 +435,8 @@ section{
    margin-bottom: 20px;
    color:white;
    position: relative;
+   margin:5px;
+   font-size:16px;
 }
 
 #portfolio .porfolio-container .projects .project img{
@@ -462,7 +464,7 @@ section{
 #portfolio .porfolio-container .projects .project .service-description{
   width:80%;
   position:absolute;
-  bottom:0%;
+  bottom:5%;
   left:50%;
   transform:translateX(-50%);
   opacity: 0;
@@ -488,7 +490,7 @@ section{
 }
 
 #portfolio .porfolio-container .projects .project:hover .service-description p{
-    font-size:14px;
+    font-size:13px;
     border-left: 7px solid green;
     border-right: 7px solid green;
 }
@@ -854,7 +856,7 @@ footer .social-footer a:hover > i.fab{
 }
 
 .container-msg .chat-container .chatbox .pic{
-    background:url(./assets/pics/Milien.png) no-repeat center/cover;
+    background:url(../assets/pics/Milien.png) no-repeat center/cover;
     height: 120px;
     width:110px;
     border-radius: 50%;

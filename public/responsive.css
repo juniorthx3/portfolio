@@ -37,6 +37,8 @@
        padding:20px;
        font-size:2rem;
     }
+
+    
   }
 
 
@@ -53,6 +55,22 @@
     #home header nav label.logo{
         padding:0px 70px;
     }
+
+    #portfolio .porfolio-container .projects .project .service-description{
+        font-size:14px;
+      }
+
+    #portfolio .porfolio-container .projects .project:hover .service-description p{
+        font-size:12px;
+        border-left: 2px solid green;
+        border-right: 2px solid green;
+    }
+
+    #portfolio .porfolio-container .projects .project:hover .service-description{  
+        bottom:10%;
+        opacity: 1;
+    }
+
   }
 
 
@@ -208,7 +226,7 @@
     padding:15px;
     font-size:1.8rem;
  }
-  
+
   /******************** SECTION ********************/
       #skills{
           background:coral;
@@ -264,9 +282,6 @@
           flex-basis: 85%;
           
        }
-       #portfolio .porfolio-container .projects .project .service-description h3{
-          text-transform:initial;
-      }
   
        #portfolio .porfolio-container .projects .project:hover .service-description p{
           font-size:12px;
@@ -279,23 +294,36 @@
       #portfolio .porfolio-container .projects .project:hover .service-description{  
           bottom:30% !important;
       }
+
+      #services .services {
+        margin-top:-10px;
+        width:80%;
+        display: grid;
+        grid-template-columns: 100%;
+        margin-bottom: 30px;
+      }
+
+      #services .services .service:hover{
+        transform:none;
+      }
   
       /* connect section */
+
       #connect .xContainer{
-          height: 300vh;
+          height: 700px;
           width:100%;
           display: block;
       }
       #connect .xContainer img{
-         visibility: hidden;
-         opacity: 0;
+        visibility: hidden;
+        opacity: 0;
       }
   
       #connect .xContainer .contact-container{
          position:absolute;
-         top:50px;
+         top:125px;
          left:50%;
-         transform:translateX(-50%);
+         transform:translateX(-50%); 
       } 
   
       /* icon message*/
