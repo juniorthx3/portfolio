@@ -251,6 +251,10 @@
                 <img src="./assets/pics/coder.svg" alt="image">
             <div class="form-container">
                 <div class="contact-container">
+                   <form action="https://formsubmit.co/juniorthx@gmail.com" method="POST">
+                    <input type="hidden" name="_next" value="https://juniorthx3.github.io/portfolio">
+                    <input type="hidden" name="_subject" value="Porfolio Message!">
+                    <input type="hidden" name="_captcha" value="false">
                     <div class="form-control">
                         <input type="text" name="name" id="name" maxlength="40" required />
                         <label for="Name">Name</label>
@@ -267,8 +271,9 @@
                         <textarea name="" id="Message" cols="30" rows="5" style="margin-left:-5px"></textarea>
                         <label for="Message">Message</label>
                     </div>
-                    <button>Send Message</button>
+                    <button type="submit">Send Message</button>
                 </div>
+                   </form>
             </div>
            </div>
     </section>
@@ -318,7 +323,7 @@
              <input type="hidden" name="_subject" value="Porfolio Message!">
              <input type="hidden" name="_captcha" value="false">
              <textarea placeholder="Write your message here... Remember to put name & email for an reply! Thanks!" required></textarea>
-             <button class="send-btn" type="submit" onClick="alert('sent')">Send Message</button>
+             <button class="send-btn" type="submit" onClick="alert('Message sent!')">Send Message</button>
            </form>
         </div>
       </div>
