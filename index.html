@@ -45,9 +45,11 @@
             <p>Have an exciting project where you need some help? That's great because i'm currently available for small or large projects. Send me over a message <a href="#connect">here</a> or through my social networks, and let's chat.</p>
             <p></p>
             <p>
-                <button id="port-folio">
-                    <i class="fas fa-arrow-circle-right"></i> View Portfolio
-                </button>
+                <a href="#portfolio">
+                    <button id="port-folio" >
+                        <i class="fas fa-arrow-circle-right"></i> View Portfolio
+                    </button>
+                </a>
                 <button id="resume" onClick="window.open('https://juniorthx3.github.io/resume/','_blank')">
                     <i class="fas fa-file"></i> View Resume
                 </button>
@@ -270,6 +272,12 @@
             </div>
            </div>
     </section>
+    <div id="langdesign">
+        <h2>Built using: </h2>
+        <img class="languages-logo languages-transition" src="./assets/svg/html5.svg" alt="HTML5" title="HTML5">
+        <img class="languages-logo languages-transition" src="./assets/svg/css3.svg" alt="CSS3" title="CSS3">
+        <img class="languages-logo languages-transition" src="./assets/svg/JS.svg" alt="JS" title="JS">
+    </div>
     <footer>
         <div class="social-footer">
                 <a href="https://codepen.io/juniorthx3" target="_blank"><i class="fab fa-codepen"></i></a>
@@ -305,9 +313,12 @@
                 <span class="dot"></span>
                 <span class="dot"></span>
             </div>
-            <form action="">
-             <textarea placeholder="Send me a little message here... Don't forget to put email, name or phone so you can receive an reply directly from me"></textarea>
-             <button class="send-btn">Send Message</button>
+            <form action="https://formsubmit.co/juniorthx@gmail.com" method="POST">
+             <input type="hidden" name="_next" value="https://juniorthx3.github.io/portfolio">
+             <input type="hidden" name="_subject" value="Porfolio Message!">
+             <input type="hidden" name="_captcha" value="false">
+             <textarea placeholder="Write your message here... Remember to put name & email for an reply! Thanks!" required></textarea>
+             <button class="send-btn" type="submit" onClick="alert('sent')">Send Message</button>
            </form>
         </div>
       </div>

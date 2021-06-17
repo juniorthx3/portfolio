@@ -562,7 +562,34 @@ section{
       padding:10px;
       line-height: 25px;
   }
+/*****************************lANGUAGES FRONT END*********************************/
 
+#langdesign{
+    height: 10vh;
+    background:#ffd8be;
+    filter:grayscale(80%);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+#langdesign h2{
+    font-family: 'Lobster';
+    font-size:1.8rem;
+}
+#langdesign img{
+    max-width:50px;
+    margin:8px;
+}
+
+#skills .languages-container .languages-logo{
+    margin:1rem;
+    height: 3rem;
+    opacity: 8;
+    filter: brightness(100%) drop-shadow(4px 4px 3px #398494);
+}
 
 /*****************************CONNECT SECTION*********************************/
 
@@ -576,7 +603,7 @@ section{
 
 #connect .xContainer{
     height: 100vh;
-    width:70%;
+    width:100%;
     display: flex;
     align-items: center;
     justify-content: center;

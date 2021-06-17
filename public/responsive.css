@@ -38,7 +38,6 @@
        font-size:2rem;
     }
 
-    
   }
 
 
@@ -57,7 +56,7 @@
     }
 
     #portfolio .porfolio-container .projects .project .service-description{
-        font-size:14px;
+         font-size:14px;
       }
 
     #portfolio .porfolio-container .projects .project:hover .service-description p{
@@ -71,6 +70,25 @@
         opacity: 1;
     }
 
+  }
+
+  @media screen and (max-width: 1150px){
+    #connect .xContainer img{
+        max-width:37rem;
+    }
+  }
+
+  @media screen and (max-width: 981px){
+    #connect .xContainer img{
+        max-width:27rem;
+    }
+  }
+
+
+  @media screen and (max-width: 949px){
+    #skills .container .row .col{
+        padding:0 30px;
+    }
   }
 
 
@@ -292,7 +310,7 @@
       }
   
       #portfolio .porfolio-container .projects .project:hover .service-description{  
-          bottom:30% !important;
+          bottom:16% !important;
       }
 
       #services .services {
