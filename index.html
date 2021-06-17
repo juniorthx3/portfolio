@@ -268,10 +268,10 @@
                        <label for="Subject">Subject</label>
                     </div>
                     <div class="form-control">
-                        <textarea name="" id="Message" cols="30" rows="5" style="margin-left:-5px"></textarea>
+                        <textarea name="message" id="Message" cols="30" rows="5" style="margin-left:-5px" required></textarea>
                         <label for="Message">Message</label>
                     </div>
-                    <button type="submit">Send Message</button>
+                    <button type="submit" onClick='alert("Message sent successfully!")'>Send Message</button>
                 </div>
                    </form>
             </div>
@@ -322,7 +322,7 @@
              <input type="hidden" name="_next" value="https://juniorthx3.github.io/portfolio">
              <input type="hidden" name="_subject" value="Porfolio Message!">
              <input type="hidden" name="_captcha" value="false">
-             <textarea placeholder="Write your message here... Remember to put name & email for an reply! Thanks!" required></textarea>
+             <textarea name="newmessage" placeholder="Write your message here... Remember to put name & email for an reply! Thanks!" required></textarea>
              <button class="send-btn" type="submit" onClick="alert('Message sent!')">Send Message</button>
            </form>
         </div>
