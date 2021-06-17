@@ -1,6 +1,12 @@
 /* PHONES */
+@media screen and (device-height: 576px){
+   #home{
+    height: 140vh;
+   }
+}
+
 @media screen and (device-height: 640px){
-    section{
+    #home{
         height: 143vh;
     }
 
@@ -11,7 +17,7 @@
 }
 
 @media screen and (device-height: 731px){
-    section{
+    #home{
         height: 120vh;
     }
 
@@ -29,7 +35,7 @@
 }
 
 @media screen and (device-height: 568px){
-    section{
+    #home{
         height: 165vh;
     }
     #home .info-container .info .social ul li{
@@ -48,7 +54,7 @@
 }
 
 @media screen and (device-height: 667px){
-    section{
+    #home{
         height: 135vh;
     }
     #home .info-container .info .social ul li{
@@ -58,7 +64,7 @@
 }
 
 @media screen and (device-height: 736px){
-    section{
+    #home{
         height: 120vh;
     }
     #home .info-container .info .social ul li{
@@ -68,7 +74,7 @@
 }
 
 @media screen and (device-height: 812px){
-    section{
+    #home{
         height: 115vh;
     }
     #home .info-container .info .social ul li{

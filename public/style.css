@@ -30,7 +30,7 @@ section{
     align-items: center;
     justify-content: flex-start;
     padding-top:30px;
-    text-rendering:optimizeLegibility;
+   
 }
 
 /*****************************HOME SECTION*********************************/
@@ -526,7 +526,7 @@ section{
     margin-top: 10px;
     display: grid;
     grid-template-columns: 30% 30% 30%;
-    gap:30px;
+    gap:35px;
     text-align: center;
   }
 
@@ -537,7 +537,7 @@ section{
     box-shadow: black 0px 0px 15px 0px;
     border-radius: 10px;
     height: auto;
-    margin-left:23px;
+    
     width:100%;
   }
   #services .services .service:hover{
