@@ -329,7 +329,7 @@
       /* connect section */
 
       #connect .xContainer{
-          height: 700px;
+          height: 500px;
           width:100%;
           display: block;
       }
@@ -340,7 +340,7 @@
   
       #connect .xContainer .contact-container{
          position:absolute;
-         top:125px;
+         top:60px;
          left:50%;
          transform:translateX(-50%); 
       } 
@@ -351,6 +351,44 @@
          visibility: hidden;
       }
   
+  }
+
+  @media screen and (min-width: 300px) and (max-width: 411px){
+    #home .info-container .info .social ul{
+        border:2px solid red;
+        padding:10px;
+    }
+    #home .info-container .info .social ul li{
+        padding:6px;
+        font-size:1.9rem;
+     }
+  }
+
+  @media screen and (width: 320px){
+    #home .info-container .info .social ul{
+        padding:5px;
+    }
+    #home .info-container .info .social ul li{
+        padding:1px;
+     }
+  }
+
+  @media screen and (width: 414px){
+    #home .info-container .info .social ul{
+        padding:5px;
+    }
+    #home .info-container .info .social ul li{
+        padding:1px;
+     }
+  }
+
+  @media screen and (width: 280px){
+    #home .info-container .info .social ul{
+        padding:5px;
+    }
+    #home .info-container .info .social ul li{
+        padding:1px;
+     }
   }
 
 

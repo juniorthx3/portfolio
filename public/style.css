@@ -576,10 +576,10 @@ section{
 
 #langdesign h2{
     font-family: 'Lobster';
-    font-size:1.8rem;
+    font-size:1.5rem;
 }
 #langdesign img{
-    max-width:50px;
+    max-width:40px;
     margin:8px;
 }
 
