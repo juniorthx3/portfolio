@@ -1,5 +1,6 @@
 const navigation= document.querySelector(".navigation");
 const bars= document.querySelector("#bars");
+const times= document.querySelector("#times");
 const menu = document.querySelector(".menu");
 
 window.addEventListener("scroll", function(){
@@ -31,6 +32,8 @@ function closeChat(){
 bars.addEventListener("click", ()=>{
     bars.classList.toggle("active");
     menu.classList.toggle("active");
+    times.style.display='block';
+    bars.style.display='none'
 
     menu.forEach((link, index)=>{
         if(link.style.animation){
@@ -40,6 +43,12 @@ bars.addEventListener("click", ()=>{
         }
     })
 });
+
+times.addEventListener('click', ()=>{
+    times.style.display='none';
+    bars.style.display='block';
+    menu.style.display='none';
+})
 
 
 

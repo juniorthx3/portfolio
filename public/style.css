@@ -95,7 +95,7 @@ section{
     transition:0.5s;
 }
 
-#home header nav label #bars{
+#home header nav label #bars, #times{
     color:white;
     font-size:30px;
     line-height: 50px;
@@ -1057,8 +1057,8 @@ footer .social-footer a:hover > i.fab{
     .menu{
         position: fixed;
         left: 100%;
-        top: 63px;
-        height: 35vh;
+        top: 60px;
+        height: 36vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1116,6 +1116,10 @@ footer .social-footer a:hover > i.fab{
 
     #home header nav label #bars{
         display: block;
+    }
+
+    #home header nav label #times{
+        display:none;
     }
 
    /*************************************HOME*****************************/
