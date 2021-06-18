@@ -949,3 +949,399 @@ footer .social-footer a:hover > i.fab{
     transform:translateY(5px);
 }
 
+
+/*******************MEDIA QUERY************************/
+@media screen and (max-width: 1273px){
+    #home .info-container{
+        margin:10px auto;
+        width:100%;
+        grid-template-columns: 25% 75%;
+     }
+
+     #home .info-container .picture{
+        height:50vh;
+        display: flex;
+        align-items: center;
+    }
+
+    #home .info-container .picture img{
+        max-height:280px;
+        box-shadow:none;
+    }
+    
+    #home .info-container .info{
+        width: 100%;
+        margin-top:20px;
+        font-size:17px
+    }
+
+    #home .info-container .info .profile h1{
+        font-size:3rem;
+    }
+    
+    #home .info-container .info .profile h2{
+        font-size:1.4rem;
+        margin-top:-15px;
+        color:#0bb5f4;
+    }
+    
+    #home .info-container .info .social ul li{
+       padding:20px;
+       font-size:2rem;
+    }
+
+  }
+
+
+  @media screen and (max-width: 1217px){
+    #home .info-container{
+        grid-template-columns: 24% 70%;
+        margin-left:20px;
+     }
+
+    #home .info-container .picture img{
+       height:230px;
+    }
+
+    #home header nav label.logo{
+        padding:0px 70px;
+    }
+
+    #portfolio .porfolio-container .projects .project .service-description{
+         font-size:14px;
+    }
+
+    #portfolio .porfolio-container .projects .project:hover .service-description p{
+        font-size:12px;
+        border-left: 2px solid green;
+        border-right: 2px solid green;
+    }
+
+    #portfolio .porfolio-container .projects .project:hover .service-description{  
+        bottom:10%;
+        opacity: 1;
+    }
+
+  }
+
+  @media screen and (max-width: 1150px){
+    #connect .xContainer img{
+        max-width:37rem;
+    }
+  }
+
+  @media screen and (max-width: 981px){
+    #connect .xContainer img{
+        max-width:27rem;
+    }
+  }
+
+
+  @media screen and (max-width: 949px){
+    #skills .container .row .col{
+        padding:0 30px;
+    }
+  }
+
+
+  @media screen and (max-width: 870px) {
+    /********************MENU*************************/
+    #home header nav{
+        background:#0bb5f4;
+    }
+
+    #home .info-container{
+        padding-left:0;
+     }
+
+    .menu{
+        position: fixed;
+        left: 100%;
+        top: 63px;
+        height: 35vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:0 10px 27px rgba(0, 0, 0, 0.05);
+        transition:linear 0.5s ease-in;
+    }
+
+    #home header nav ul.menu{
+        background:DarkSalmon;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border:2px solid gray;
+    }
+    
+    #home header nav label.logo{
+        padding-left:25px;
+
+    }
+
+    #home header nav ul li{
+        display: block;
+        margin:4px 0;
+        line-height: 30px;
+        height:6vh;
+        width:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 2px solid gray;
+    }
+
+    #home header nav ul li:nth-child(1), #home header nav ul li:nth-child(5){
+        padding:0;
+    }
+
+    #home header nav ul li a{
+        font-size:16px;
+    }
+ 
+    #home header nav ul li a:active, #home header nav ul li a:hover{
+        color:black;
+        width:100%;
+        border:none;
+        background:white; 
+        transform: translateY(-3px) scale(1.1);
+    }
+
+    .menu.active {
+        left: 0;
+    }
+
+    #home header nav label #bars{
+        display: block;
+    }
+
+   /*************************************HOME*****************************/
+    #home{
+        background:linear-gradient(to right, #0bb5f4 50%,coral 50%);
+    }
+
+    #home header{
+        border-bottom:2px solid white;
+    }
+
+    #home .info-container{
+      margin:10px auto;
+      width:100%;
+      grid-template-columns: 100%;
+      grid-column-gap: 0;
+      text-align: center;
+   }
+   
+   #home .info-container .picture{
+      margin:5px auto;
+      height:30vh;
+   }
+
+   #home .info-container .picture img{
+      height:180px;
+      box-shadow:none;
+   }
+  
+   #home .info-container .info{
+      width: 100%;
+      font-size:12px;
+      margin-top:-35px;
+   }
+
+   #home .info-container .info .profile{
+    margin-top:-4px;
+   }
+  
+   #home .info-container .info .profile h1{
+      font-size:2.5rem;
+      letter-spacing:2px;
+   }
+  
+   #home .info-container .info .profile h2{
+      letter-spacing: 2px;
+      font-size:1rem;
+      margin-top:-17px;
+      margin-bottom:10px;
+      text-shadow: 1px 0px 4px white;
+      color:red;
+   }
+
+  #home .info-container .info .about{
+    margin-top:20px;
+  }
+  
+  #home .info-container .info .about p{
+      line-height: 22px;
+      padding:5px;
+      font-size:16px;
+  }
+  
+  #home .info-container .info .about p button{
+      height:30px;
+   }
+
+#home .info-container .info .about p #port-folio:hover,
+#home .info-container .info .about p #resume:hover{
+    background:transparent;
+    transform:none;
+}
+  
+#home .info-container .info .about p a{
+    color:black;
+}
+  
+#home .info-container .info .social ul li{
+    display: inline;
+    padding:15px;
+    font-size:1.8rem;
+ }
+
+  /******************** SECTION ********************/
+      #skills{
+          background:coral;
+      }
+      #skills:before{
+          background:none;
+      }
+  
+      #skills h1{
+          color:white;
+          font-size:2.5rem;
+          margin-bottom: -80px;
+      }
+  
+      #skills .container .row{
+          width:100%;
+          flex-direction: column;
+      }
+  
+      #skills .container .row .col{
+          padding:20px;
+
+      }
+
+      #skills .container .row .col .card{
+        box-shadow: 0px 0px 15px 0px gray;
+        border-radius: 0;
+        text-align: center;
+        width:250px;
+        height: 320px;
+      }
+
+      #skills .container .row .col .card:hover{
+        transform:none;
+      }
+
+      #skills .container .row .col .card .icon-skills{
+        height: 35px;
+      }
+
+      #skills .container .row .col .card .icon-skills i{
+        max-height: 15px;
+      }
+
+
+      #skills .languages-container img{
+        width:100px;
+    }
+   
+      /* Projects section */
+  
+      #portfolio .porfolio-container .projects .project{
+          flex-basis: 85%;
+          
+       }
+  
+       #portfolio .porfolio-container .projects .project:hover .service-description p{
+          font-size:12px;
+      }
+  
+      #portfolio .porfolio-container .projects .project:hover .service-description hr{
+          margin:5px auto;
+      }
+  
+      #portfolio .porfolio-container .projects .project:hover .service-description{  
+          bottom:16% !important;
+      }
+
+
+      #services .services {
+        margin-top:-10px;
+        width:80%;
+        display: grid;
+        grid-template-columns: 100%;
+        margin-bottom: 30px;
+      }
+
+      #services .services .service:hover{
+        transform:none;
+      }
+  
+      /* connect section */
+
+      #connect .xContainer{
+          height: 500px;
+          width:100%;
+          display: block;
+      }
+      #connect .xContainer img{
+        visibility: hidden;
+        opacity: 0;
+      }
+  
+      #connect .xContainer .contact-container{
+         position:absolute;
+         top:60px;
+         left:50%;
+         transform:translateX(-50%); 
+      } 
+  
+      /* icon message*/
+      .icon-msg{
+         opacity: 0;
+         visibility: hidden;
+      }
+  
+  }
+
+  @media screen and (min-width: 300px) and (max-width: 411px){
+    #home .info-container .info .social ul{
+        border:2px solid red;
+        padding:10px;
+    }
+    #home .info-container .info .social ul li{
+        padding:6px;
+        font-size:1.9rem;
+     }
+  }
+
+  @media screen and (width: 320px){
+    #home .info-container .info .social ul{
+        padding:5px;
+    }
+    #home .info-container .info .social ul li{
+        padding:1px;
+     }
+  }
+
+  @media screen and (width: 414px){
+    #home .info-container .info .social ul{
+        padding:5px;
+    }
+    #home .info-container .info .social ul li{
+        padding:1px;
+     }
+  }
+
+  @media screen and (width: 280px){
+    #home .info-container .info .social ul{
+        padding:5px;
+    }
+    #home .info-container .info .social ul li{
+        padding:1px;
+     }
+  }
+
