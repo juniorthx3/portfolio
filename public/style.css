@@ -1313,7 +1313,6 @@ footer .social-footer a:hover > i.fab{
 
   @media screen and (min-width: 300px) and (max-width: 411px){
     #home .info-container .info .social ul{
-        border:2px solid red;
         padding:10px;
     }
     #home .info-container .info .social ul li{
@@ -1342,7 +1341,7 @@ footer .social-footer a:hover > i.fab{
 
   @media screen and (width: 280px){
     #home .info-container .info .social ul{
-        padding:5px;
+        padding:1px;
     }
     #home .info-container .info .social ul li{
         padding:1px;
